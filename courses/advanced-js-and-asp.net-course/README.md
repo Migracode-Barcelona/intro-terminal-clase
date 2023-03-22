@@ -1,3 +1,0 @@
-# 💾 Advanced JS & ASP.NET course
-
-Under development...
