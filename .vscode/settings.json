@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        ".content": true,
+        ".devcontainer": true,
+        ".vscode": true,
+        ".gitignore": true
+    }
+}
