@@ -1,4 +1,6 @@
-# 1 - Dev Tools and command line
+# 🙌 Welcome to your first class!
+
+# Class 1: Dev Tools and command line
 
 ## Table of Content
 
