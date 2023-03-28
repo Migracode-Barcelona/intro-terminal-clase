@@ -1,496 +1,497 @@
-# 🙌 Welcome to your first class!
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10662363)
+# 🙌 ¡Bienvenido a tu primera clase!
 
-# Class 1: Dev Tools and command line
+# Clase 1: Herramientas de desarrollo y línea de comandos
 
-## Table of Content
+## Tabla de Contenido
 
-1. [Operating systems](dev\_tools.md#operating-systems)
-2. [The Command Line](dev\_tools.md#the-command-line)
-3. [Beginner Level Terminal](dev\_tools.md#beginner-level)&#x20;
-   1. [Navigating in Terminal](dev\_tools.md#navigating-in-terminal)
-   2. [Working with Files and Folders](dev\_tools.md#working-with-files-and-folders)
-   3. [Listing Files and Flags](dev\_tools.md#listing-files-and-flags)
-4. [Terminal Basics Exercises](dev\_tools.md#terminal-basics-exercises)
-5. [Intermediate Level Terminal](dev\_tools.md#intermediate-level)
-   1. [Permissions and Links](dev\_tools.md#permissions-and-links)
-   2. [Redirection](dev\_tools.md#redirection)
-   3. [Piping](dev\_tools.md#piping)
-6. [Permissions, Redirection, and Piping Exercises](dev\_tools.md#permissions-redirection-and-piping-exercise)
-7. [Development Tools](dev\_tools.md#development-tools)
-8. [Visual Studio Code Extensions](dev\_tools.md#optional-visual-studio-code-extensions-for-web-development)
-9. [More Resources](dev\_tools.md#more-resources)
-10. [Advanced Level - 1](dev\_tools.md#advanced-level-1-optional) **{ OPTIONAL }**
-11. [Advanced Level - 2](dev\_tools.md#advanced-level-2-optional) **{ OPTIONAL }**
+1. [Sistemas operativos](dev_tools.md#operating-systems)
+2. 2. [La línea de comandos](dev\_tools.md#the-command-line)
+3. 3. [Terminal de nivel principiante](dev\_tools.md#nivel-principiante)&#x20;
+   1. 1. [Navegación en el terminal](dev\_tools.md#navigating-in-terminal)
+   2. 2. [Trabajar con archivos y carpetas](dev\_tools.md#working-with-files-and-folders)
+   3. 3. [Listado de archivos y banderas](dev\_tools.md#listing-files-and-flags)
+4. 4. [Ejercicios básicos de terminal](dev\_tools.md#terminal-basics-exercises)
+5. [Terminal de nivel intermedio](dev\_tools.md#intermediate-level)
+   1. 1. [Permisos y enlaces](dev\_tools.md#permissions-and-links)
+   2. 2. [Redirección](dev\_tools.md#redirection)
+   3. 5. [Tuberías](dev\_tools.md#piping)
+6. 6. [Permisos, redirección y ejercicios de tuberías](dev\_tools.md#permissions-redirection-and-piping-exercise)
+7. 7. [Herramientas de desarrollo](dev\_tools.md#development-tools)
+8. 8. [Extensiones de código de Visual Studio](dev\_tools.md#optional-visual-studio-code-extensions-for-web-development)
+9. [Más recursos](dev_tools.md#more-resources)
+10. [Nivel avanzado - 1](dev\_tools.md#advanced-level-1-optional) **{ OPCIONAL }**
+11. 11. [Nivel avanzado - 2](dev\_tools.md#advanced-level-2-optional) **{ OPTIONAL }**
 
-## Operating Systems
+## Sistemas operativos
 
-An Operating System (OS) is a powerful, and usually large, program that controls and manages the hardware and software on a computer. All computers and computer-like devices require operating systems, including laptops, tablets, desktops, and smartphones. The OS performs all the basic tasks like file management, memory management, process management, handling input and output, and controlling peripheral devices such as disk drives and printers.
+Un Sistema Operativo (SO) es un programa potente, y normalmente grande, que controla y gestiona el hardware y el software de un ordenador. Todos los ordenadores y dispositivos similares requieren sistemas operativos, incluidos portátiles, tabletas, ordenadores de sobremesa y teléfonos inteligentes. El sistema operativo realiza todas las tareas básicas, como la gestión de archivos, la gestión de memoria, la gestión de procesos, el manejo de la entrada y la salida, y el control de dispositivos periféricos como unidades de disco e impresoras.
 
-The most common operating systems for desktop and laptop computers are:
+Los sistemas operativos más comunes para ordenadores de sobremesa y portátiles son:
 
 * Microsoft Windows (Windows 95, Windows 7, Windows 10,...)
 * Linux (Debian, Red Hat, Ubuntu,..)
 * MacOS
 * Chrome OS
-* Android and iOS are operating systems for mobile devices.
+* Android e iOS son sistemas operativos para dispositivos móviles.
 
 #### Unix
 
-Unix is ​​a family of operating systems. The first version was developed starting in 1969. Unix is ​​characterized by being portable and multitasking.
+Unix es una familia de sistemas operativos. La primera versión se desarrolló a partir de 1969. Unix se caracteriza por ser portable y multitarea.
 
-Unix operating systems are widely used in a multitude of devices that range from the most capable supercomputers to the mobile phones and computers that we use daily. The philosophy of Unix systems is characterized by:
+Los sistemas operativos Unix se utilizan ampliamente en multitud de dispositivos que van desde los superordenadores más capaces hasta los teléfonos móviles y ordenadores que utilizamos a diario. La filosofía de los sistemas Unix se caracteriza por:
 
-* a hierarchical file system,
-* a large collection of small programs that can work in series,
-* the use of text files to store the data,
-* treating devices as files.
+* un sistema de archivos jerárquico,
+* una gran colección de pequeños programas que pueden trabajar en serie,
+* el uso de archivos de texto para almacenar los datos,
+* el tratamiento de los dispositivos como archivos.
 
-Linux and MacOS are examples of Unix systems.
+Linux y MacOS son ejemplos de sistemas Unix.
 
 #### Linux
 
-Linux is a family of Unix-like operating systems that use the Linux kernel. The name comes from the original programmer, a student named Linus Torvals, who in 1991, working with the GNU project of the Free Software Foundation, created the first version of this operating system.
+Linux es una familia de sistemas operativos tipo Unix que utilizan el núcleo Linux. El nombre proviene del programador original, un estudiante llamado Linus Torvals, que en 1991, trabajando con el proyecto GNU de la Fundación para el Software Libre, creó la primera versión de este sistema operativo.
 
-Linux development is one of the clearest examples of free, open source software development by a diverse community of programmers all over the world. Anyone can use the operating system, study it and modify it. The open source nature of Linux is protected by the GPL (GNU General Public License).
+El desarrollo de Linux es uno de los ejemplos más claros de desarrollo de software libre y de código abierto por parte de una comunidad diversa de programadores de todo el mundo. Cualquiera puede utilizar el sistema operativo, estudiarlo y modificarlo. La naturaleza de código abierto de Linux está protegida por la licencia GPL (GNU General Public License).
 
 #### Ubuntu
 
-Ubuntu is a Linux distribution. It is an open-source operating system aimed at desktop users, and its strengths are that it is easy to use and install. Although the desktop is somewhat different from Windows or Mac OS, a user who is accustomed to any of these operating systems will not have many problems becoming familiar with Ubuntu. Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots.
+Ubuntu es una distribución de Linux. Es un sistema operativo de código abierto dirigido a usuarios de escritorio, y sus puntos fuertes son que es fácil de usar e instalar. Aunque el escritorio es algo diferente al de Windows o Mac OS, un usuario acostumbrado a cualquiera de estos sistemas operativos no tendrá muchos problemas para familiarizarse con Ubuntu. Ubuntu es una distribución de Linux basada en Debian y compuesta en su mayor parte por software libre y de código abierto. Ubuntu se publica oficialmente en tres ediciones: Desktop, Server y Core para dispositivos y robots del Internet de las cosas.
 
-If you are using [Ubuntu](https://ubuntu.com/), you will see this sreen:
+Si estás usando [Ubuntu](https://ubuntu.com/), verás esta pantalla:
 
 ![](<.content/image (97).png>)
 
-Demo of Ubuntu:
+Demo de Ubuntu:
 
-* The friendly Desktop
-* The filesystem: navigate through folders and files using File Manager
-* Ubuntu software: a tool to install software easily
+* El Escritorio amigable
+* El sistema de archivos: navegar por carpetas y archivos usando el Administrador de Archivos
+* El software de Ubuntu: una herramienta para instalar software fácilmente
 
-## The Command Line
+## La línea de comandos
 
-The **Command Line**, also knows as **Bash**, **Terminal** or **Shell** (**Línea de Comandos** ó **Símbolo de sistema** in Spanish) is a way of controlling a computer, based on a text interface.
+La **Línea de Comandos**, también conocida como **Bash**, **Terminal** o **Shell** (**Línea de Comandos** ó **Símbolo de sistema** en español) es una forma de controlar un ordenador, basada en una interfaz de texto.
 
 ![](<.content/image (31).png>)
 
-Why should I use the command line/terminal?
+¿Por qué debo utilizar la línea de comandos/terminal?
 
-* Once you know the basics, it helps you to interact with you computer faster
-* Some software for developers must always be used from a terminal
-* You have more control over the software
-* It allows you to create scripts (lists of commands) and automate manual tasks
-* It is what hackers use in movies.
+* Una vez que conozcas los conceptos básicos, te ayudará a interactuar con tu ordenador más rápidamente.
+* Algunos programas para desarrolladores deben utilizarse siempre desde un terminal.
+* Tienes más control sobre el software
+* Te permite crear scripts (listas de comandos) y automatizar tareas manuales.
+* Es lo que usan los hackers en las películas.
 
-#### How do I use the terminal on my computer?
+#### ¿Cómo uso el terminal en mi ordenador?
 
-Here are the instructions for the three operating system:
+Aquí tienes las instrucciones para los tres sistemas operativos:
 
-* **MacOS:** You can find the Terminal.app in your Applications, in the folder Utilities. An alternative way to open the Terminal is to search with Spotlight and type in “terminal”. Select the application called terminal and press the return key. This should open up an app with a black background. When you see your username followed by a dollar sign, you’re ready to start using the command line.
-* **Linux:** You can open the Terminal by directly pressing \[ctrl+alt+T] or you can search for it by clicking the dash (#) icon, typing in “terminal” in the search box, and opening the Terminal application. This should open up an app with a black background. When you see your username followed by a dollar sign, you’re ready to start using the command line.
-* **Windows:** Windows has its own **Command Prompt**. It is very similar to the Unix command line, but some commands are not exactly the same. For the main differences go to this [link](https://enexdi.sciencesconf.org/data/pages/windows\_vs\_mac\_commands\_1.pdf). Because of these differences, and because we want to learn UNIX commands, we use the **Git Bash**. Go to the Windows "Start" button and search the program **Git Bash**. When you open it you will see a screen like this one:
+* **MacOS:** Puedes encontrar el Terminal.app en tus Aplicaciones, en la carpeta Utilidades. Una forma alternativa de abrir el Terminal es buscar con Spotlight y escribir "terminal". Selecciona la aplicación llamada terminal y pulsa la tecla de retorno. Esto debería abrir una aplicación con fondo negro. Cuando veas tu nombre de usuario seguido de un signo de dólar, estarás listo para empezar a utilizar la línea de comandos.
+* **Linux:** Puedes abrir la Terminal pulsando directamente \[ctrl+alt+T] o puedes buscarla haciendo clic en el icono del guión (#), escribiendo "terminal" en el cuadro de búsqueda y abriendo la aplicación Terminal. Se abrirá una aplicación con fondo negro. Cuando veas tu nombre de usuario seguido de un signo de dólar, estarás listo para empezar a utilizar la línea de comandos.
+* **Windows:** Windows tiene su propio **Instructor de Comandos**. Es muy similar a la línea de comandos de Unix, pero algunos comandos no son exactamente iguales. Para ver las principales diferencias vaya a este [enlace](https://enexdi.sciencesconf.org/data/pages/windows\vs\_mac_commands\_1.pdf). Debido a estas diferencias, y porque queremos aprender comandos UNIX, usamos el **Git Bash**. Ve al botón "Inicio" de Windows y busca el programa **Git Bash**. Al abrirlo verás una pantalla como ésta:
 
 ![](<.content/image (105).png>)
 
-After you have followed the instructions, open a terminal and write `ls`, then press the `Enter` key. What do you see?
+Después de seguir las instrucciones, abre un terminal y escribe `ls`, luego pulsa la tecla `Enter`. ¿Qué verás?
 
-#### Commonly used commands
+#### Comandos más utilizados
 
-These are the most used commands that you will quickly become comfortable with during the course. These commands allow you to effectively move around the filesystem and write software on your laptop. There are more commands in the tables with more commands and descriptions below.
+Estos son los comandos más utilizados con los que te sentirás cómodo rápidamente durante el curso. Estos comandos te permiten moverte eficazmente por el sistema de ficheros y escribir software en tu portátil. Hay más comandos en las tablas con más comandos y descripciones más abajo.
 
-* `cd` - change directory. To move up one folder level and into the parent directory use: `cd ..`
-* `ls` - list the contents of a directory. Can also be used as `ls [directory_name]` to list the contents of a specific directory without actually moving (with `cd`) to it
-* `pwd` - print working directory: print the full location of the folder you are working in
-* `mkdir [name]` - make directory: create a new directory, with the given `name` after a space
-* `touch [file_name]` - create a new file, with the given name (don't forget to add the extension, like `.css` or `.html`)
-* `rm [file_name]` - remove a file
-* `rm -r [directory_name]` - remove a directory (**and all files inside that directory**)
+* `cd` - cambiar directorio. Para subir un nivel de carpeta y entrar en el directorio padre usa: `cd ..`
+* `ls` - lista el contenido de un directorio. También puede usarse como `ls [nombre_directorio]` para listar el contenido de un directorio específico sin moverse (con `cd`) a él.
+* `pwd` - imprime el directorio de trabajo: imprime la ubicación completa de la carpeta en la que se está trabajando
+* `mkdir [nombre]` - make directory: crea un nuevo directorio, con el `nombre` dado después de un espacio
+* `touch [nombre_archivo]` - crear un nuevo archivo, con el nombre dado (no olvide añadir la extensión, como `.css` o `.html`)
+* `rm [nombre_archivo]` - elimina un archivo
+* `rm -r [nombre_directorio]` - elimina un directorio (**y todos los archivos dentro de ese directorio**)
 
-**Getting Help**
+**Obtener ayuda
 
-When you're stuck and need help with a command, help is usually only a few keystrokes away. Help on most commands is built right into the commands themselves, available through online help programs (such as [https://linux.die.net/man](https://linux.die.net/man)), and of course online.
+Cuando estés atascado y necesites ayuda con un comando, la ayuda suele estar a sólo unas pulsaciones de distancia. La ayuda para la mayoría de los comandos está integrada en los propios comandos, disponible a través de programas de ayuda en línea (como [https://linux.die.net/man](https://linux.die.net/man)) y, por supuesto, en línea.
 
-**Using a command's built-in help**\
-Many (but not all) commands have simple help screens that can be called with special command flags. These flags usually look like `-h` or `--help`. Example: `grep --help`.
+**Utilizar la ayuda integrada de un comando***.
+Muchos comandos (pero no todos) tienen pantallas de ayuda simples que pueden ser llamadas con banderas de comando especiales. Estas opciones suelen tener el aspecto de `-h` o `--help`. Ejemplo: `grep --help`.
 
-**Online manuals: the man pages**\
-The best source of information for most commands are the manual pages, also known as the man pages. To read a command's man page, type `man` plus a space and the command.
+**Manuales en línea: las páginas man***.
+La mejor fuente de información para la mayoría de los comandos son las páginas de manual, también conocidas como páginas man. Para leer la página man de un comando, escriba `man` más un espacio y el comando.
 
-| Example   | Info                                   |
+| Ejemplo
 | --------- | -------------------------------------- |
-| `man ls`  | Get help on the ls command             |
-| `man man` | Get the manual for info on the manual! |
+| Man ls: Obtén ayuda sobre el comando ls.
+| `man man` | Obtén información sobre el manual |
 
 
 
-## Beginner Level
+## Nivel Principiante
 
 
 
-### { Navigating in Terminal. }
+### { Navegando en Terminal. }
 
-#### Objectives:
+#### Objetivos:
 
-By the end of this chapter, you should be able to:
+Al finalizar este capítulo, deberás ser capaz de:
 
-* Define what Terminal is and how it is structured
-* Navigate through and list files on your machine
-* Define the following terms: shell, terminal, directory, absolute path, relative path
+* Definir qué es Terminal y cómo está estructurado
+* Navegar y listar archivos en su máquina
+* Definir los siguientes términos: shell, terminal, directorio, ruta absoluta, ruta relativa
 
-| Linux/Mac          | Windows         | Description                                                                |
+| Linux/Mac | Windows | Descripción
 | ------------------ | --------------- | -------------------------------------------------------------------------- |
-| `pwd`              | `cd`            | print working directory: shows current location                            |
-| `cd`               | `cd`, `chdir`   | change directory; returns to the home directory                            |
-| `cd directory`     | `cd directory`  | change into the specified directory                                        |
-| `cd ~`             |                 | \~ means home directory; shortcut to the home directory                    |
-| `cd ..`            | `cd ..`         | move up one directory                                                      |
-| `cd -`             |                 | returns to the directory of your previous location                         |
-| `ls`               | `dir /w`        | list all files in current directory                                        |
-| `ls directory`     | `dir directory` | list all files in the specified directory                                  |
-| `ls -l`            | `dir`           | list all files in long format: one file per line, with info about the file |
-| `ls -a`            | `dir /a`        | list all files, including hidden files (= filenames that start with .)     |
-| `ls -ld directory` |                 | show detailed information about the directory                              |
-| `ls /usr/bin/d*`   | `dir d*.*`      | list all files starting with d in the `/usr/bin` directory                 |
+| Imprimir directorio de trabajo: muestra la ubicación actual.
+| Cambiar directorio: vuelve al directorio inicial.
+| cambiar al directorio especificado
+| `cd ~` | | significa directorio personal; acceso directo al directorio personal | `cd ..` | cambiar directorio
+| `cd ..` | `cd ..` | subir un directorio | `cd ..` | subir un directorio
+| `cd -` | vuelve al directorio de su ubicación anterior | `ls
+| Lista todos los ficheros del directorio actual
+| `ls directorio` | `dir directorio` | lista todos los ficheros en el directorio especificado | | `ls -l` | `dir /w
+| `ls -l` | `dir` | lista todos los ficheros en formato largo: un fichero por línea, con información sobre el fichero | | `ls -a` | `dir /w
+| `ls -a` | `dir /a` | lista todos los ficheros, incluidos los ocultos (= nombres de fichero que empiezan por .) | `ls -ld directorio` | lista todos los ficheros en formato largo: un fichero por línea, con información sobre el fichero
+| `ls -ld directorio` muestra información detallada sobre el directorio
+| `ls /usr/bin/d*` | `dir d*.*` | lista todos los ficheros que empiezan por d en el directorio `/usr/bin` | `ls -ld directorio` | muestra información detallada sobre el directorio
 
 ****
 
-#### What is Terminal?
+#### ¿Qué es Terminal?
 
-Terminal is an application that gives us a command line interface (or CLI) to interact with the computer. Everything you can do in Finder/Windows Explorer you can do in Terminal. Developers use Terminal because it is usually much faster to use Terminal than a graphical user interface (GUI) such as Finder/Windows Explorer. Although the Terminal interface can seem daunting at first, with a bit of practice, you'll be up to speed in no time!
+Terminal es una aplicación que nos proporciona una interfaz de línea de comandos (o CLI) para interactuar con el ordenador. Todo lo que puedes hacer en Finder/Explorador de Windows lo puedes hacer en Terminal. Los desarrolladores utilizan Terminal porque suele ser mucho más rápido utilizar Terminal que una interfaz gráfica de usuario (GUI) como Finder/Windows Explorer. Aunque la interfaz de Terminal puede parecer desalentadora al principio, con un poco de práctica, estarás al día en muy poco tiempo.
 
-#### What is a shell? Bash/ZSH
+#### ¿Qué es un shell? Bash/ZSH
 
-You will also hear the term "shell" when learning about Terminal so it is important to distinguish between these terms. From [Stack Overflow](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal):
+También oirás el término "shell" cuando aprendas sobre Terminal, así que es importante distinguir entre estos términos. De [Stack Overflow](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal):
 
-> The **shell** is the program which actually processes commands and returns output. Most shells also manage foreground and background processes, command history and command line editing. These features (and many more) are standard in bash, the most common shell in modern linux systems. (We are using `zsh`).
+> El **shell** es el programa que realmente procesa los comandos y devuelve la salida. La mayoría de los shells también gestionan los procesos en primer y segundo plano, el historial de comandos y la edición de la línea de comandos. Estas características (y muchas más) son estándar en bash, la shell más común en los sistemas linux modernos. (Nosotros usamos `zsh`).
 >
-> A **terminal** refers to a wrapper program which runs a shell. Decades ago, this was a physical device consisting of little more than a monitor and keyboard. As unix/linux systems added better multiprocessing and windowing systems, this terminal concept was abstracted into software.
+> Un **terminal** se refiere a un programa que ejecuta un shell. Hace décadas, era un dispositivo físico que consistía en poco más que un monitor y un teclado. A medida que los sistemas unix/linux añadieron mejores sistemas de multiprocesamiento y ventanas, este concepto de terminal se abstrajo en software.
 
-If you are using Windows, there is a great tool called [Babun](https://babun.github.io/), which is a shell that you can install and use the same commands as if you were on Mac or Linux. This is not essential, but using it will enable you to more easily follow along with the material.
+Si usas Windows, hay una herramienta estupenda llamada [Babun](https://babun.github.io/), que es una shell que puedes instalar y usar los mismos comandos que si estuvieras en Mac o Linux. Esto no es esencial, pero su uso le permitirá seguir más fácilmente el material.
 
-#### How Terminal is Structured
+#### Cómo está estructurado Terminal
 
-In Terminal, all files and folders begin at the root directory. The root directory is noted by a `/`. Inside the root directory are essential files/folders that your machine needs, but we do not modify the files and folders in the root directory often. Inside of the root directory, we have a folder called `Users` which contains all of the user accounts on your computer. If you move into the directory for your user account, you will be in the `home` directory, which is denoted by `~`. For example, if your user name on the computer is `eschoppik`, then your home directory would be `/Users/eschoppik`. A synonym for the `/Users/eschoppik` path is `~` when you are logged in as `eschoppik`.
+En Terminal, todos los archivos y carpetas comienzan en el directorio raíz. El directorio raíz se marca con un `/`. Dentro del directorio raíz están los archivos/carpetas esenciales que tu máquina necesita, pero no modificamos los archivos y carpetas en el directorio raíz a menudo. Dentro del directorio raíz, tenemos una carpeta llamada `Users` que contiene todas las cuentas de usuario de tu ordenador. Si te mueves al directorio de tu cuenta de usuario, estarás en el directorio `home`, que se indica con `~`. Por ejemplo, si tu nombre de usuario en el ordenador es `eschoppik`, entonces tu directorio home sería `/Users/eschoppik`. Un sinónimo de la ruta `/Users/eschoppik` es `~` cuando estás conectado como `eschoppik`.
 
-#### Moving Around
+#### Moverse
 
-The first thing you want to start to understand when using Terminal is how to navigate from folder to folder. One of the most common commands you will be using in Terminal is `cd` which is short for "change directory." In order to change a directory, type `cd` followed by the directory or a path to the directory. If we want to move up a directory we use `cd ..` and if we want to move into a directory we specify the name of the directory we are moving into. For example, if you are in your home directory and type `cd Desktop`, you should move into your Desktop directory.
+Lo primero que querrás empezar a entender cuando uses Terminal es cómo navegar de carpeta en carpeta. Uno de los comandos más comunes que usarás en la Terminal es `cd` que es la abreviatura de "cambiar directorio". Para cambiar un directorio, escribe `cd` seguido del directorio o una ruta al directorio. Si queremos movernos hacia arriba en un directorio usamos `cd ..` y si queremos movernos hacia dentro de un directorio especificamos el nombre del directorio al que nos estamos moviendo. Por ejemplo, si estás en tu directorio personal y escribes `cd Escritorio`, te moverás a tu directorio Escritorio.
 
-We just mentioned that you can type `cd` followed by a directory or path. But what is a path? Let's learn some more vocabulary:
+Acabamos de mencionar que puedes escribir `cd` seguido de un directorio o ruta. Pero, ¿qué es una ruta? Aprendamos algo más de vocabulario:
 
-#### Absolute Paths vs Relative Paths
+#### Rutas absolutas vs. Rutas relativas
 
-A path is simply the way to reach a file or folder; it's like an address for the file or folder you're trying to reach. When we specify a path starting from the root directory `/`, we call that an absolute path. For example, if I am currently in the `~` home directory and I would like to change directories into my Desktop folder, I can do that in two of the following ways:
+Una ruta es simplemente la forma de llegar a un archivo o carpeta; es como una dirección para el archivo o carpeta que estás tratando de alcanzar. Cuando especificamos una ruta que comienza en el directorio raíz `/`, la llamamos ruta absoluta. Por ejemplo, si actualmente estoy en el directorio raíz `~` y me gustaría cambiar de directorio a mi carpeta Escritorio, puedo hacerlo de dos de las siguientes maneras:
 
-1. `cd Desktop` - relative to where I am currently
-2. `cd /Users/eschoppik/Desktop` - absolute, starting from the root (first `/`, then `Users`, then `eschoppik`, then `Desktop`)
+1. 1. `cd Escritorio` - relativa a donde estoy actualmente
+2. 2. `cd /Users/eschoppik/Desktop` - absoluto, empezando desde la raíz (primero `/`, luego `Users`, luego `eschoppik`, luego `Desktop`)
 
-**Questions to Answer**
+**Preguntas para responder**
 
-* What is the difference between `/` and `~`? What do we call each of these directories?
-* What command do we use to change directories?
-* What is the difference between an absolute and relative path?
-
-
-
-### { Working with Files and Folders. }
-
-#### Objectives
-
-By the end of this chapter, you should be able to:
-
-* Create files and folders in Terminal using `mkdir` and `touch`
-* Move files and folders in Terminal using `mv`
-* Copy files and folders in Terminal using `cp`
-* Remove files and folders in Terminal using `rm` and `rmdir`
-* Explain what a flag is in Terminal
-* Explain what the following commands do: `whoami`, `pwd`, `cat`, `echo`, `less`, `open`
+* ¿Cuál es la diferencia entre `/` y `~`? ¿Cómo llamamos a cada uno de estos directorios?
+* ¿Qué comando usamos para cambiar de directorio?
+* ¿Cuál es la diferencia entre una ruta absoluta y una relativa?
 
 
 
-| Linux/Mac | Windows                 | Description                                       |
+### { Trabajando con Archivos y Carpetas. }
+
+#### Objetivos
+
+Al final de este capítulo, usted debe ser capaz de:
+
+* Crear archivos y carpetas en Terminal usando `mkdir` y `touch`.
+* Mover archivos y carpetas en Terminal usando `mv`.
+* Copiar archivos y carpetas en la Terminal usando `cp`.
+* Eliminar archivos y carpetas en Terminal usando `rm` y `rmdir`.
+* Explicar qué es una bandera en Terminal
+* Explicar qué hacen los siguientes comandos: `whoami`, `pwd`, `cat`, `echo`, `less`, `open`.
+
+
+
+| Linux/Mac | Windows | Descripción |
 | --------- | ----------------------- | ------------------------------------------------- |
-| `cp`      | `copy`                  | copy a file from one location to another          |
-| `mv`      | `rename`, `ren`, `move` | moves a file to a new location, or renames a file |
-| `rm`      | `del`                   | remove (= delete) a file                          |
-| `mkdir`   | `md`                    | create a new directory                            |
-| `rmdir`   | `rd`, `rmdir`           | remove a directory                                |
+| Copiar un archivo de una ubicación a otra.
+| Mueve un archivo a una nueva ubicación o cambia el nombre de un archivo.
+| eliminar (= borrar) un fichero
+| crear un nuevo directorio
+| eliminar un directorio.
 
 
 
-#### Creating Files And Folders
+#### Creación de archivos y carpetas
 
-Now that we have a good understanding of how to change directories and navigate in Terminal, let's see how we can create our own folders and files. To create a folder we use the `mkdir` command (short for "make directory"), followed by the name (or space-separated names) of the folder(s) that we would like to create. So let's head over to our `Desktop` and create a new folder called `first_folder`.
-
-```
-cd /Users/$USER/Desktop
-mkdir first_folder
-```
-
-Whoa...you should be asking yourself, what is that `$USER` thing? It is an environment variable in your shell that keeps track of the current user of the shell. You can also see who `$USER` by typing `echo $USER` or by using the command `whoami`. Try out both methods of checking who the current user is.
-
-As another side note, this tutorial will use absolute paths to navigate, just to make it easier for you to follow along. However, don't feel like you MUST use absolute paths over relative ones.
-
-Now that we made the `first_folder`, how do we change directories into it? If you are thinking of the `cd` command, you're right! So let's `cd /Users/$USER/Desktop/first_folder`. Or, if you are already in your Desktop, you can just `cd first_folder`.
-
-We just mentioned "if you are already in your Desktop." How do you know which directory you are in if you forget? Thankfully, there is a handy command called `pwd` which will display the absolute path and let you know what current directory you are working in. So if you are ever unsure, just type in `pwd` (which is short for _present working directory_).
-
-Now that we are inside our new folder, `first_folder`, let's create a new file. A simple way to create a file is with the `touch` command. The `touch` command simply creates an empty file. Let's create a file called `first_file`: `touch /Users/$USER/Desktop/first_folder/first_file`. Alternatively, if you are currently in the `first_folder` directory, you can simple type `touch first_file`. Now use the `ls` command to verify that your file was created. `ls`, which is short for "list," will list all of the files and folders in your current directory.
-
-#### Displaying Contents Of A File
-
-A very common command to display the contents of a file is the `cat` command. If you type `cat NAME_OF_FILE` you can see the contents of the file easily, right there in Terminal. Try it out on the file you just created, `first_file`. You should see no output after pressing enter. There is no output because `first_file` is empty.
-
-Let's add some text to the file so that we can use `cat`. Type:
-
-`echo "Hello World" > first_file`
-
-The `echo` command simply writes text to the terminal. The `>` is called a redirect. The `>` redirects the output from the command on the left side into the file on the right hand side. We will see more redirects in the next chapter.
-
-Now try using `cat` on the file again. Do you see `Hello World`?
-
-There are other ways of seeing the contents of a file in the terminal. Try using the command `less`: `less first_file`. `less` is a program that displays the contents of a file and allows the user to navigate up and down through the file or search for text in the file. To exit `less`, just press `q`.
-
-#### Opening up a file
-
-If you would like to open up a file, you can use the `open` command. So if we want to see the contents of `first_file` we can do `open first_file`. The `open` command is also very useful if you want to open all the files and folders in a directory (using your operating system's user interface). Try typing in `open .` and see what happens! If you are on Windows, the command to do this is `start NAME_OF_FILE`
-
-#### Moving Files And Folders
-
-Now that you understand how to create files and folders, let's move onto another essential operation: moving and copying folders. To move files and folders we use the `mv` command. Let's try this out!
-
-Head back to the Desktop by typing in `cd ~/Desktop` and let's make a new file called `test.txt` (remember that command? If not - stop reading and go through the previous section again). Now on your Desktop you should have a folder called `first_folder` and a file called `test.txt`. Our goal is to move `test.txt` inside of `first_folder` - let's do that using the `mv` command. First make sure you are in the Desktop (type `pwd` to be sure), type `mv test.txt first_folder/test.txt`, and press enter.
-
-Did it work? You shouldn't see any kind of success message or confirmation from Terminal, but you also should not see an error. This is very common when working with Terminal: you will see error messages if a command is incorrect, but very rarely see a success message. In other words, no news is good news. In this case, to make sure we did the correct thing, let's `cd` into `first_folder` and type in `ls`. We should see `test.txt` inside of `first_folder`.
-
-#### Copying Files and Folders
-
-Sometimes you may want to make a copy of a file or a folder. To copy a file, we use the `cp` command (short for copy). The general syntax looks like this:
+Ahora que tenemos una buena comprensión de cómo cambiar directorios y navegar en la Terminal, vamos a ver cómo podemos crear nuestras propias carpetas y archivos. Para crear una carpeta usamos el comando `mkdir` (abreviatura de "make directory"), seguido del nombre (o nombres separados por espacios) de la(s) carpeta(s) que queremos crear. Así que vayamos a nuestro `Desktop` y creemos una nueva carpeta llamada `primera_carpeta`.
 
 ```
-cp PATH_TO_ORIGINAL_FILE PATH_TO_COPIED_FILE
+cd /Usuarios/$USUARIO/Escritorio
+mkdir primera_carpeta
 ```
 
-For example, if we wanted to create a copy of `test.txt` and call it `test_copy.txt`, we could enter the following command (assuming we're inside of `first_folder`:
+Vaya... deberías estar preguntándote, ¿qué es eso de `$USUARIO`? Es una variable de entorno en tu shell que mantiene un registro del usuario actual del shell. También puedes ver quién es `$USER` tecleando `echo $USER` o usando el comando `whoami`. Prueba ambos métodos para comprobar quién es el usuario actual.
+
+Como otra nota al margen, este tutorial usará rutas absolutas para navegar, sólo para facilitarte el seguimiento. Sin embargo, no sientas que DEBES usar rutas absolutas sobre las relativas.
+
+Ahora que hemos creado la `primera_carpeta`, ¿cómo cambiamos los directorios dentro de ella? Si estás pensando en el comando `cd`, ¡estás en lo cierto! Así que vamos a `cd /Usuarios/$USUARIO/Escritorio/primera_carpeta`. O, si ya estás en tu Escritorio, puedes simplemente `cd primera_carpeta`.
+
+Acabamos de mencionar "si ya estás en tu Escritorio". ¿Cómo saber en qué directorio se encuentra si lo olvida? Por suerte, existe un comando muy útil llamado `pwd` que mostrará la ruta absoluta y te permitirá saber en qué directorio estás trabajando. Así que si alguna vez no estás seguro, teclea `pwd` (que es la abreviatura de _present working directory_).
+
+Ahora que estamos dentro de nuestra nueva carpeta, `primera_carpeta`, vamos a crear un nuevo archivo. Una forma sencilla de crear un archivo es con el comando `touch`. El comando `touch` simplemente crea un archivo vacío. Vamos a crear un fichero llamado `primer_fichero`: `touch /Usuarios/$USUARIO/Escritorio/primera_carpeta/primer_fichero`. Alternativamente, si te encuentras en el directorio `primera_carpeta`, puedes simplemente escribir `touch primer_archivo`. Ahora use el comando `ls` para verificar que su archivo fue creado. `ls`, que es la abreviatura de "list", listará todos los archivos y carpetas de tu directorio actual.
+
+#### Mostrar el contenido de un archivo
+
+Un comando muy común para mostrar el contenido de un archivo es el comando `cat`. Si tecleas `cat NOMBRE_DE_FICHERO` puedes ver el contenido del fichero fácilmente, ahí mismo en el Terminal. Pruébalo con el fichero que acabas de crear, "primer_fichero". No deberías ver ninguna salida después de pulsar enter. No hay salida porque "primer_archivo" está vacío.
+
+Vamos a añadir algo de texto al fichero para poder utilizar `cat`. Escribe:
+
+`echo "Hola Mundo" > primer_fichero`.
+
+El comando `echo` simplemente escribe texto en el terminal. El `>` se llama redirección. El `>` redirige la salida del comando de la izquierda al fichero de la derecha. Veremos más redirecciones en el próximo capítulo.
+
+Ahora intenta usar `cat` en el fichero de nuevo. ¿Ves "Hola Mundo"?
+
+Hay otras formas de ver el contenido de un fichero en el terminal. Prueba a usar el comando `less`: `less primer_fichero`. `less` es un programa que muestra el contenido de un fichero y permite al usuario navegar arriba y abajo por el fichero o buscar texto en el fichero. Para salir de `less`, pulse `q`.
+
+#### Abrir un fichero
+
+Si quieres abrir un fichero, puedes utilizar el comando `open`. Así, si queremos ver el contenido de `primer_archivo` podemos hacer `open primer_archivo`. El comando `open` también es muy útil si quieres abrir todos los archivos y carpetas de un directorio (utilizando la interfaz de usuario de tu sistema operativo). Pruebe a teclear `open .` y vea lo que ocurre. Si estás en Windows, el comando para hacer esto es `start NAME_OF_FILE`.
+
+#### Mover archivos y carpetas
+
+Ahora que ya sabes cómo crear archivos y carpetas, pasemos a otra operación esencial: mover y copiar carpetas. Para mover archivos y carpetas utilizamos el comando `mv`. ¡Vamos a probarlo!
+
+Vuelve al Escritorio tecleando `cd ~/Escritorio` y creemos un nuevo archivo llamado `prueba.txt` (¿recuerdas ese comando? Si no es así, deja de leer y repasa la sección anterior). Ahora en tu Escritorio deberías tener una carpeta llamada `primera_carpeta` y un archivo llamado `prueba.txt`. Nuestro objetivo es mover `prueba.txt` dentro de `primera_carpeta` - vamos a hacerlo usando el comando `mv`. Primero asegúrate de que estás en el Escritorio (teclea `pwd` para estar seguro), teclea `mv prueba.txt primera_carpeta/prueba.txt`, y pulsa intro.
+
+¿Ha funcionado? No deberías ver ningún tipo de mensaje de éxito o confirmación desde Terminal, pero tampoco deberías ver un error. Esto es muy común cuando se trabaja con Terminal: verás mensajes de error si un comando es incorrecto, pero muy raramente verás un mensaje de éxito. En otras palabras, ninguna noticia es una buena noticia. En este caso, para asegurarnos de que hemos hecho lo correcto, vamos a `cd` en `primera_carpeta` y tecleamos `ls`. Deberíamos ver `test.txt` dentro de `first_folder`.
+
+#### Copiando archivos y carpetas
+
+A veces podemos querer hacer una copia de un fichero o una carpeta. Para copiar un fichero, utilizamos el comando `cp` (abreviatura de copy). La sintaxis general es la siguiente
 
 ```
-cp test.txt test_copy.txt
+cp RUTA_AL_ARCHIVO_ORIGINAL RUTA_AL_ARCHIVO_COPIADO
 ```
 
-If you list all of the files in `first_folder`, you should now see three text files.
-
-What if you want to copy an entire directory of files? Try moving up a directory from `first_folder`, and then type `cp first_folder first_folder_copy`. Uh oh! You should see an error: `cp: questions_copy is a directory (not copied).`
-
-In order to copy a directory, you need to modify the `cp` command as follows:
+Por ejemplo, si quisiéramos crear una copia de `prueba.txt` y llamarla `prueba_copia.txt`, podríamos introducir el siguiente comando (suponiendo que estamos dentro de `primera_carpeta`:
 
 ```
-cp -r first_folder first_folder_copy
+cp prueba.txt prueba_copia.txt
 ```
 
-The `-r` is called a _flag_; you can think of a flag for a command as an option that can be passed to that command. To learn more about the flags that you can pass to `cp`, you can type `man cp` (`man` is short for manual, on Windows this command is `--help`) and use the arrow keys to move up and down. When you're finished, press `q` to quit.
+Si lista todos los archivos de `primera_carpeta`, verá tres archivos de texto.
 
-#### Deleting Files And Folders
+¿Y si quieres copiar un directorio entero? Prueba a subir un directorio desde `primera_carpeta`, y luego escribe `cp primera_carpeta primera_carpeta_copia`. Y, ¡oh! Debería ver un error: `cp: questions_copy es un directorio (no copiado).`
 
-Alright, enough with all of these files and folders, let's get rid of them. Make sure you are inside the `first_folder` and type `rm test.txt`. Once again, you shouldn't see much of a response from the terminal, so run a quick `ls` to make sure that the file is removed. Now that it is gone... where did it go? The Trash? The answer is it is completely removed from your computer. There is no confirmation or undo so be **VERY** careful when using the `rm` command. After you have removed this file, go ahead and remove the copied file as well. Finally, remove `first_file`. Now that the `first_folder` is empty, let's move up a directory and remove the `first_folder` directory itself.
+Para copiar un directorio, necesitas modificar el comando `cp` de la siguiente manera:
 
-Here you may run into a problem. If you try to use `rm` on a directory, you will see this message: `rm: first_folder: is a directory`. It turns out that `rm` is for a file, while the command `rmdir` is used to remove (empty) directories. So, let's use the `rmdir` command to remove `first_folder`. Make sure that there is nothing else inside that folder, or else you will see a message that looks like this: `rmdir: first_folder: Directory not empty`.
+```
+cp -r primera_carpeta primera_carpeta_copia
+```
 
-If there is anything inside the folder, you will have to use `rm -rf first_folder`. Like we saw with `cp`, the `r` and `f` in `-rf` are examples of flags. How can you learn more about the flags for `rm`? Go ahead and remove the `first_folder_copy` directory using `rm -rf`.
+La `-r` se llama _bandera_; puedes pensar en una bandera para un comando como una opción que se puede pasar a ese comando. Para saber más sobre las opciones que puedes pasar a `cp`, puedes escribir `man cp` (`man` es la abreviatura de manual, en Windows este comando es `--help`) y usar las flechas para moverte arriba y abajo. Cuando hayas terminado, pulsa `q` para salir.
 
-**Exercises**
+#### Borrar archivos y carpetas
 
-1. Create a file called `name.txt`.
-2. Try renaming the file to `rename.txt` using the `mv` command. What does this tell you about the command?
-3. Using the `cp` command, make a copy of `rename.txt` and call it `copy.txt`.
-4. Remove the file `copy.txt`.
-5. Create a folder called `questions`.
-6. Change directories to the `questions` folder.
-7. Create a file called `first.txt`.
-8. Create a file called `second.txt`.
-9. Go back a directory and make a copy of the questions folder and call it `questions_copy`.
-10. When using `cp -r` what is the `-r` called? What does it do?
-11. Delete the original `questions` folder and the copy.
+Muy bien, ya basta con todos estos archivos y carpetas, vamos a deshacernos de ellos. Asegúrate de que estás dentro de la `primera_carpeta` y escribe `rm prueba.txt`. Una vez más, no deberías ver mucha respuesta de la terminal, así que ejecuta un rápido `ls` para asegurarte de que el archivo ha sido eliminado. Ahora que ya no está... ¿dónde ha ido? ¿A la papelera? La respuesta es que ha sido completamente eliminado de tu ordenador. No hay confirmación ni deshacer, así que ten MUCHO cuidado cuando uses el comando `rm`. Después de eliminar este archivo, elimine también el archivo copiado. Por último, elimine "primer_archivo". Ahora que la carpeta `first_folder` está vacía, subamos un directorio y eliminemos la carpeta `first_folder`.
 
+Aquí puedes encontrarte con un problema. Si intentas usar `rm` en un directorio, verás este mensaje: `rm: primera_carpeta: es un directorio`. Resulta que `rm` es para un fichero, mientras que el comando `rmdir` se usa para eliminar directorios (vacíos). Así que vamos a utilizar el comando `rmdir` para eliminar `primera_carpeta`. Asegúrate de que no hay nada más dentro de esa carpeta, o de lo contrario verás un mensaje parecido a este: `rmdir: primera_carpeta: Directorio no vacío`.
 
+Si hay algo dentro de la carpeta, tendrás que usar `rm -rf primera_carpeta`. Como vimos con `cp`, `r` y `f` en `-rf` son ejemplos de banderas. ¿Cómo puedes saber más sobre las banderas de `rm`? Sigue adelante y elimina el directorio `first_folder_copy` usando `rm -rf`.
 
-### { Listing Files and Flags. }
+**Ejercicios
 
-#### Objectives
-
-By the end of this chapter, you should be able to:
-
-* Understand what the `ls` command does
-* Define flags and describe how the syntax works
-* List files using flags
-
-#### Listing Files
-
-As you saw in the previous chapter, one of the most important commands you are going to be using is `ls`, which lists the contents of a directory. If you type `ls` in a directory you will see all sorts of content. For example, typing `ls` in your home directory will show you all of the files and folders inside of that directory. Typically your home directory contains folders such as `Desktop`, `Documents`, `Downloads`, `Music`, `Pictures`, etc.
-
-Sometimes the default `ls` command does not give us all the information we want. In such cases, we'll need to add some flags to get more details.
-
-#### Flags
-
-In the previous chapter, we saw how flags could be used to modify the behavior of `cp` and `rm`. Flags can change and even enhance commands and are added using a `-` after the command. Flags are usually represented by single uppercase and lowercase letters. With the `ls` command, we can pass in the `-a` flag to list "all" files (including hidden files and folders). If we want the `ls` command to give us more information about each file, we can pass in the `-l` flag. To combine flags we can just use one `-` and pass in each flag. So the command to use `ls` and show all files and more detailed information about each one would be `ls -la`.
-
-Using flags for `ls` will be essential when working with permissions as well as when you start working with `git`. We will also see many other terminal commands which accept flags later in this course.
+1. Crea un fichero llamado `nombre.txt`.
+2. Intenta renombrar el fichero a `renombrar.txt` utilizando el comando `mv`. ¿Qué te dice esto sobre el comando?
+3. Utilizando el comando `cp`, haz una copia de `renombrar.txt` y llámala `copiar.txt`.
+4. 4. Elimina el fichero `copiar.txt`.
+5. Crea una carpeta llamada `preguntas`.
+6. Cambia de directorio a la carpeta `questions`.
+7. Crea un fichero llamado `primero.txt`.
+8. Crea un fichero llamado `segundo.txt`.
+9. Retrocede un directorio y haz una copia de la carpeta de preguntas y llámala `copia_preguntas`.
+10. 10. Cuando usas `cp -r` ¿cómo se llama la `-r`? ¿Qué hace?
+11. Borra la carpeta original `questions` y la copia.
 
 
 
-## { Terminal Basics Exercises. }
+### { Listado de Archivos y Banderas. }
 
-Write the following terminal commands to perform the following tasks:
+#### Objetivos
 
-#### Part I
+Al final de este capítulo, deberías ser capaz de:
 
-1. make a directory called `first`
-2. change directory to the `first` folder
-3. create a file called `person.txt`
-4. change the name of `person.txt` to `another.txt`
-5. make a copy of the `another.txt` file and call it `copy.txt`
-6. remove the `copy.txt` file
-7. make a copy of the `first` folder and call it `second`
-8. delete the `second` folder
+* Entender lo que hace el comando `ls
+* Definir flags y describir cómo funciona la sintaxis
+* Listar archivos usando flags
 
-#### Part II
+#### Listado de archivos
 
-1. What does the `man` command do? Type in `man rm`. How do you scroll and get out?
-2. Look at the `man` page for `ls`. What does the `-l` flag do? What does the `-a` flag do?
-3. Type the following command to download and save the contents of google.com: `curl https://www.google.com > google.html`
-4. Use `less` to look at the contents of `google.html`.
-5. Look at the `man` page for less. Read the section on `/pattern`. Search for the text **hplogo** in the `google.html` file.
-6. How do you jump between words in the terminal?
-7. How do you get to the end of a line in terminal?
-8. How do you move your cursor to the beginning in terminal?
-9. How do you delete a word (without pressing backspace multiple times) in terminal?
-10. What is the difference between a terminal and shell?
-11. What is an absolute path?
-12. What is an relative path?
-13. What is a flag? Give three examples of flags you have used.
-14. What do the `r` and `f` flags do with the `rm` command?
+Como has visto en el capítulo anterior, uno de los comandos más importantes que vas a utilizar es `ls`, que lista el contenido de un directorio. Si escribes `ls` en un directorio verás todo tipo de contenido. Por ejemplo, si escribes `ls` en tu directorio personal verás todos los archivos y carpetas que hay dentro de ese directorio. Normalmente, tu directorio personal contiene carpetas como `Desktop`, `Documents`, `Downloads`, `Music`, `Pictures`, etc.
+
+A veces el comando por defecto `ls` no nos da toda la información que queremos. En esos casos, necesitaremos añadir algunas banderas para obtener más detalles.
+
+#### Banderas
+
+En el capítulo anterior, vimos cómo se podían utilizar las banderas para modificar el comportamiento de `cp` y `rm`. Los flags pueden cambiar e incluso mejorar los comandos y se añaden usando un `-` después del comando. Los flags se representan normalmente con letras mayúsculas y minúsculas. Con el comando `ls`, podemos pasar la bandera `-a` para listar "todos" los archivos (incluyendo los archivos y carpetas ocultos). Si queremos que el comando `ls` nos proporcione más información sobre cada archivo, podemos introducir el indicador `-l`. Para combinar banderas podemos usar una `-` y pasar cada bandera. Así que el comando para usar `ls` y mostrar todos los archivos e información más detallada sobre cada uno sería `ls -la`.
+
+Usar banderas para `ls` será esencial cuando trabajes con permisos así como cuando empieces a trabajar con `git`. También veremos muchos otros comandos de terminal que aceptan flags más adelante en este curso.
 
 
 
+## { Ejercicios Básicos de Terminal. }
+
+Escribe los siguientes comandos de terminal para realizar las siguientes tareas:
+
+#### Parte I
+
+1. crea un directorio llamado "first
+2. cambia el directorio a la carpeta `first
+3. crea un fichero llamado `persona.txt`.
+4. Cambia el nombre de `persona.txt` a `otro.txt`.
+5. Haga una copia del fichero `otro.txt` y llámela `copia.txt`.
+6. elimine el archivo "copia.txt
+7. Haga una copia de la carpeta "first" y llámela "second".
+8. elimine la carpeta "second
+
+#### Parte II
+
+1. ¿Qué hace el comando `man`? Escribe `man rm`. ¿Cómo se desplaza y sale?
+2. Mira la página `man` para `ls`. ¿Qué hace la bandera `-l`? ¿Qué hace la bandera `-a`?
+3. Escribe el siguiente comando para descargar y guardar el contenido de google.com: `curl https://www.google.com > google.html`
+4. Utiliza `less` para ver el contenido de `google.html`.
+5. 5. Mira la página `man` de less. 6. Lee la sección sobre `/pattern`. Busca el texto **hplogo** en el fichero `google.html`.
+6. Cómo se salta entre palabras en el terminal?
+7. ¿Cómo se llega al final de una línea en el terminal?
+8. Cómo se desplaza el cursor al principio en terminal?
+9. ¿Cómo se borra una palabra (sin pulsar varias veces retroceso) en terminal?
+10. ¿Cuál es la diferencia entre terminal y shell?
+11. 11. ¿Qué es una ruta absoluta?
+12. 12. ¿Qué es una ruta relativa?
+13. 13. ¿Qué es una bandera? Pon tres ejemplos de banderas que hayas utilizado.
+14. 14. ¿Qué hacen las banderas `r` y `f` con el comando `rm`?
 
 
-## Intermediate Level
 
 
 
-### { Permissions and Links. }
+## Nivel Intermedio
 
-#### Objectives
 
-By the end of this chapter, you should be able to:
 
-* Determine the permissions set for a file or a directory
-* Manage and change permissions using `chmod`
-* Manage and change users and groups using `chown` and `chgrp`
-* Explain what `root` is, and the relationship between `root` and `sudo`
-* Create links in the file system using the `ln` command
-* Explain the difference between a hard and a symbolic link
+### { Permisos y Enlaces. }
 
-#### Introduction
+#### Objetivos
 
-When you're working in Terminal, you may sometimes find that you're not allowed to do things you want to do. Maybe you're trying to install something, or move a file from one directory to another, and you get an error telling you something along the lines of "permission denied." These sorts of permissions errors are extremely common, so understanding how to deal with them is important. That's what we'll learn how to in this chapter.
+Al final de este capítulo, usted debe ser capaz de:
 
-#### Users and Groups
+* Determinar los permisos establecidos para un archivo o directorio.
+* Gestionar y cambiar permisos usando `chmod`.
+* Gestionar y cambiar usuarios y grupos usando `chown` y `chgrp`.
+* Explicar qué es `root` y la relación entre `root` y `sudo`.
+* Crear enlaces en el sistema de ficheros utilizando el comando `ln`.
+* Explicar la diferencia entre un enlace duro y un enlace simbólico
 
-Before you learn about permissions, you first need to understand users and groups. Let's take a look at an example. Head to your home directory and list everything using the `ls -lah` command. (Not sure what the `h` flag does? Check the manual!)
+#### Introducción
 
-The output you get might look something like this:
+Cuando estás trabajando en Terminal, a veces puedes encontrar que no se te permite hacer cosas que quieres hacer. Tal vez estás tratando de instalar algo, o mover un archivo de un directorio a otro, y recibes un error que te dice algo parecido a "permiso denegado". Este tipo de errores de permisos son extremadamente comunes, por lo que es importante entender cómo lidiar con ellos. Eso es lo que aprenderemos a hacer en este capítulo.
 
-![](<.content/image (151).png>)
+#### Usuarios y Grupos
 
-The details of these files aren't important. What you should see is a bunch of rows of output, one row for each file or directory. Let's figure out what all of this actually means. For instance, here is the line for the `.bashrc` file from the above screen shot:
+Antes de aprender acerca de los permisos, primero necesitas entender a los usuarios y grupos. Veamos un ejemplo. Dirígete a tu directorio personal y lista todo usando el comando `ls -lah`. (¿No estás seguro de lo que hace la bandera `h`? ¡Consulta el manual!)
 
-`-rwxr-xr-x 1 eschoppik staff 67B Aug 29 2014 .bashrc`
+La salida que obtienes puede ser algo como esto:
 
-The third column specifies the username of the user that owns the file. In this case, `eschoppik` is the owner of the file. The fourth column specifies the name of the group associated with the file. In this case the group `staff` is associated with the file.
+![](<.contenido/imagen (151).png>)
 
-In most Mac systems, users are also members of the `staff` group. To see which groups you are a member of, type the `groups` command in Terminal. The `staff` group will likely be one of the many groups you are in. As we will see next, permissions can be set for the owner of the file, a user that is in a group associated with the file, or a user that is neither the owner nor a member of the associated group.
+Los detalles de estos archivos no son importantes. Lo que debería ver es un montón de filas de salida, una fila por cada archivo o directorio. Veamos qué significa todo esto. Por ejemplo, aquí está la línea para el archivo `.bashrc` de la captura de pantalla anterior:
 
-#### Permissions
+`-rwxr-xr-x 1 eschoppik staff 67B Ago 29 2014 .bashrc`
 
-Let's take a look at that `.bashrc` line again:
+La tercera columna especifica el nombre de usuario al que pertenece el archivo. En este caso, `eschoppik` es el propietario del archivo. La cuarta columna especifica el nombre del grupo asociado con el archivo. En este caso el grupo `staff` está asociado al fichero.
 
-`-rwxr-xr-x 1 eschoppik staff 67B Aug 29 2014 .bashrc`
+En la mayoría de los sistemas Mac, los usuarios también son miembros del grupo `staff`. Para ver a qué grupos pertenece, escriba el comando `groups` en Terminal. El grupo `staff` será probablemente uno de los muchos grupos a los que perteneces. Como veremos a continuación, los permisos se pueden establecer para el propietario del archivo, un usuario que está en un grupo asociado con el archivo, o un usuario que no es ni el propietario ni un miembro del grupo asociado.
 
-We've already talked about the third and fourth columns in this output. Now let's talk about the first column. The `-rwxr-xr-x` refers to _permissions_ of the `.bashrc` file. Each character of the permissions string, `-rwxr-xr-x` describes something about the file's permisisons. But what are permissions? A file's permissions is a set of rules that describes which operations a user can or cannot perform on a file or folder. There are 3 types of operations that can be allowed or not allowed:
+#### Permisos
 
-* `r` - reading the file
-* `w` - writing to the file
-* `x` - executing the file (we will go into this in more detail soon)
+Echemos un vistazo a esa línea `.bashrc` de nuevo:
 
-You may be asking at this point, why is the permissions string so long if there are only 3 operations that can be specified? Well, a permissions string describes different types of users that can or cannot perform read, write and execute operations. You may be one of 3 different types of users:
+`-rwxr-xr-x 1 eschoppik staff 67B Ago 29 2014 .bashrc`
 
-1. The owner of the file.
-2. Not the owner, but a member of a group associated with the file.
-3. Other. Not an owner and not in a group that is associated with the file
+Ya hemos hablado de la tercera y cuarta columnas de esta salida. Ahora hablemos de la primera columna. El `-rwxr-xr-x` se refiere a los _permisos_ del archivo `.bashrc`. Cada caracter de la cadena de permisos, `-rwxr-xr-x` describe algo sobre los permisos del archivo. Pero, ¿qué son los permisos? Los permisos de un archivo son un conjunto de reglas que describen qué operaciones puede o no puede realizar un usuario en un archivo o carpeta. Hay 3 tipos de operaciones que se pueden permitir o no:
 
-So a permissions string specifies the permissions for all 3 types of users plus an extra character to specify the type (file, folder, etc).
+* `r` - leer el fichero
+* w` - escribir en el fichero
+* `x` - ejecutar el fichero (entraremos en esto con más detalle próximamente)
 
-Here is how the above permissions string breaks down:
+En este punto te estarás preguntando, ¿por qué la cadena de permisos es tan larga si sólo hay 3 operaciones que se pueden especificar? Bueno, una cadena de permisos describe diferentes tipos de usuarios que pueden o no realizar operaciones de lectura, escritura y ejecución. Usted puede ser uno de 3 tipos diferentes de usuarios:
 
-![](<.content/image (185).png>)
+1. 1. El propietario del fichero.
+2. No propietario, pero miembro de un grupo asociado al fichero.
+3. 3. Otro. No es propietario y no pertenece a un grupo asociado al fichero.
 
-In other words, this string says that `.bashrc` is a file, that the owner of the file can read, write, and execute, users in the group can only read and execute, and other users can only read and execute as well.
+Así que una cadena de permisos especifica los permisos para los 3 tipos de usuarios más un carácter extra para especificar el tipo (archivo, carpeta, etc).
 
-#### Changing Permissions
+Así es como se descompone la cadena de permisos anterior:
 
-To change the permissions of a file we use the `chmod` command. For each set of permissions (owner, group, everyone) we can assign a number from 0 to 7. This is called **octal** (base-8) notation. Here's a table that illustrates what each number means.
+![](<.contenido/imagen (185).png>)
 
-| Number | Permission              | `rwx` (display in terminal) |
+En otras palabras, esta cadena dice que `.bashrc` es un archivo, que el propietario del archivo puede leer, escribir y ejecutar, los usuarios del grupo sólo pueden leer y ejecutar, y otros usuarios sólo pueden leer y ejecutar también.
+
+#### Cambio de permisos
+
+Para cambiar los permisos de un fichero utilizamos el comando `chmod`. Para cada conjunto de permisos (propietario, grupo, todos) podemos asignar un número del 0 al 7. Esto se llama **octal**. Esto se llama notación **octal** (base-8). Aquí hay una tabla que ilustra lo que significa cada número.
+
+| Número Permiso `rwx` (mostrar en terminal)
 | ------ | ----------------------- | --------------------------- |
-| 0      | none                    | `---`                       |
-| 1      | execute                 | `--x`                       |
-| 2      | write only              | `-w-`                       |
-| 3      | write and execute       | `-wx`                       |
-| 4      | read only               | `r--`                       |
-| 5      | read and execute        | `r-x`                       |
-| 6      | read and write          | `rw-`                       |
-| 7      | read, write and execute | `rwx`                       |
+| 0 Ninguno
+| 1. Ejecutar.
+| 2. Sólo escritura.
+| 3. Escribir y ejecutar.
+| 4. Sólo lectura.
+| 5. Lectura y ejecución.
+| 6. Lectura y escritura.
+| 7. Lectura, escritura y ejecución.
 
-So if we want to change a file so that only the owner and group can read, write, and execute, we would type `chmod 770 somefile.txt`.
+Así que si queremos cambiar un fichero para que sólo el propietario y el grupo puedan leer, escribir y ejecutar, escribiríamos `chmod 770 algunfichero.txt`.
 
-If you'd like to be a bit more specific, you can also set permissions using what's called **symbolic** notation. Here's an example of what that looks like:
+Si quieres ser un poco más específico, también puedes establecer permisos usando lo que se llama **notación simbólica**. Aquí tienes un ejemplo:
 
 ```
 chmod ug+rwx,o-rwx hi.txt
 ```
 
-This is saying "add read, write, and execute permissions to the **u**ser and the **g**roup, and remove read, write, and execute permissions from **o**ther." While a bit more verbose, it's also a little more descriptive. To see more examples of symbolic notation, check out [this](https://askubuntu.com/questions/518259/understanding-chmod-symbolic-notation-and-use-of-octal) article.
+Esto está diciendo "añade permisos de lectura, escritura y ejecución al **u**ser y al **g**roup, y quita permisos de lectura, escritura y ejecución a **o**ther". Aunque es un poco más verboso, también es un poco más descriptivo. Para ver más ejemplos de notación simbólica, consulta [este](https://askubuntu.com/questions/518259/understanding-chmod-symbolic-notation-and-use-of-octal) artículo.
 
-If we want to change permissions for a folder, we need to add the `-R` flag: `chmod -R 755 some_folder`.
+Si queremos cambiar los permisos de una carpeta, tenemos que añadir la bandera `-R`: `chmod -R 755 alguna_carpeta`.
 
-You can read more about `chmod` [here](https://en.wikipedia.org/wiki/Chmod).
+Puedes leer más sobre `chmod` [aquí](https://en.wikipedia.org/wiki/Chmod).
 
-#### Executable Files and Folders
+#### Archivos ejecutables y carpetas
 
-Now let's talk a little bit more about what the `x` (executable) means for a file or a folder's permissions. If you have executable permissions on a folder, it means that you can cd into it. See what happens with the following commands:
+Ahora hablemos un poco más sobre lo que la `x` (ejecutable) significa para los permisos de un archivo o una carpeta. Si tienes permisos de ejecutable en una carpeta, significa que puedes entrar en ella. Mira lo que pasa con los siguientes comandos:
 
 ```
-mkdir test_folder
-cd test_folder
+mkdir carpeta_prueba
+cd carpeta_prueba
 cd ..
-chmod 666 test_folder
-cd test_folder
+chmod 666 carpeta_prueba
+cd carpeta_prueba
 ```
 
-You should see an error saying permission denied. Add the execute permission back to the folder, and then remove the folder.
+Deberías ver un error diciendo permiso denegado. Vuelva a añadir el permiso de ejecución a la carpeta y, a continuación, elimínela.
 
-Now onto executable files. When a file is executable, it can be run from your shell as if it were a program. Let's first create our file. Type the following in your terminal:
+Ahora pasemos a los archivos ejecutables. Cuando un archivo es ejecutable, puede ser ejecutado desde tu shell como si fuera un programa. Primero creemos nuestro archivo. Escribe lo siguiente en tu terminal:
 
 ```
-echo ls > test.sh
-echo pwd >> test.sh
-echo pushd . >> test.sh
-echo "cd ~" >> test.sh
-echo "pwd" >> test.sh
-echo popd >> test.sh
-cat test.sh
+echo ls > prueba.sh
+echo pwd >> prueba.sh
+echo pushd . >> prueba.sh
+echo "cd ~" >> prueba.sh
+echo "pwd" >> prueba.sh
+echo popd >> prueba.sh
+cat prueba.sh
 ```
 
-The `test.sh` file should look like the following now:
+El fichero `test.sh` debería tener ahora el siguiente aspecto:
 
 ```
 ls
@@ -501,103 +502,103 @@ pwd
 popd
 ```
 
-(Did you notice that our first `echo` command used a single arrow (`>`), while the other commands used two? We'll explore the difference between these two operators in the next chapter!)
+(¿Te has dado cuenta de que nuestro primer comando `echo` utiliza una sola flecha (`>`), mientras que los otros comandos utilizan dos? Exploraremos la diferencia entre estos dos operadores en el próximo capítulo).
 
-Now let's make the file executable and run it. Use chmod to make it executable: `chmod 755 test.sh`. Next, execute the file by providing a path to the file. In our case, the file is in the current directory, so to execute it, we do the following: `./test.sh`. We just made our first executable shell script!
+Ahora hagamos ejecutable el archivo y ejecutémoslo. Usa chmod para hacerlo ejecutable: `chmod 755 prueba.sh`. A continuación, ejecuta el archivo proporcionando una ruta al archivo. En nuestro caso, el archivo está en el directorio actual, así que para ejecutarlo, hacemos lo siguiente: `./test.sh`. ¡Acabamos de crear nuestro primer script de shell ejecutable!
 
-#### chown and chgrp
+#### chown y chgrp
 
-Now that we have a clearer understanding of users, groups and permissions, let's take a look at the line from `ls -lah` again:
+Ahora que tenemos una comprensión más clara de los usuarios, grupos y permisos, vamos a echar un vistazo a la línea de `ls -lah` de nuevo:
 
-`-rwxr-xr-x 1 eschoppik staff 67B Aug 29 2014 .bashrc`
+`-rwxr-xr-x 1 eschoppik staff 67B Ago 29 2014 .bashrc`
 
-* The `1` refers to the number of files (this will always be 1 for files)
-* `eschoppik` is the "owner"
-* `staff` is the group
-* `67B` is the size of the file
-* `Aug 29 2014` is the last day the file was modified
-* `.bashrc` is the name of the file
+* El `1` se refiere al número de archivos (siempre será 1 para los archivos)
+* `eschoppik` es el "propietario".
+* `staff` es el grupo
+* `67B` es el tamaño del fichero
+* `Aug 29 2014` es el último día que se modificó el fichero
+* `.bashrc` es el nombre del fichero
 
-So what if we don't want `eschoppik` as the owner of the file any longer? Or what if we want a different group to own that file? We can use one of the following commands:
+¿Y si ya no queremos que `eschoppik` sea el propietario del archivo? ¿O si queremos que otro grupo sea el propietario del fichero? Podemos usar uno de los siguientes comandos:
 
-`chown anotheruser:anothergroup .bashrc`
+`chown otrousuario:otrogrupo .bashrc`
 
-Or if we just want to change the group:
+O si sólo queremos cambiar el grupo
 
-`chgrp anothergroup .zshrc`.
+`chgrp otrogrupo .zshrc`.
 
-Now let's take a look at this line from the `ls -lah` command:
+Ahora echemos un vistazo a esta línea del comando `ls -lah`:
 
 `drwxr-xr-x 6 root admin 204B Oct 20 2015 ..`
 
-The other file said `eschoppik` for user and `staff` for group, but this one says `root` and `admin`. We can also see that this is a directory because it starts with a `d` before listing the permissions. So what is the `root` user?
+El otro archivo decía `eschoppik` para usuario y `staff` para grupo, pero este dice `root` y `admin`. También podemos ver que se trata de un directorio, ya que comienza con una "d" antes de enumerar los permisos. Entonces, ¿cuál es el usuario `root`?
 
-#### root user and sudo
+#### usuario root y sudo
 
-The `root` user is a special user on your computer that has the power to do anything it wants. It can change permissions on any file, delete anything it wants, etc. When you see `root` as the owner, and you want to make a change to that file, you have to use a command called `sudo`. The `sudo` command gives you the powers of the `root` user for just one command and will ask you for your password in order to preform the command. Try out commands with sudo. Create a file called `somefile.txt`. Then make the owner the root user:
+El usuario `root` es un usuario especial en tu ordenador que tiene el poder de hacer lo que quiera. Puede cambiar los permisos de cualquier archivo, borrar lo que quiera, etc. Cuando veas que `root` es el propietario, y quieras hacer un cambio en ese archivo, tienes que usar un comando llamado `sudo`. El comando `sudo` te da los poderes del usuario `root` para un solo comando y te pedirá tu contraseña para poder preformar el comando. Prueba comandos con sudo. Crea un archivo llamado `somefile.txt`. Luego haz que el propietario sea el usuario root:
 
-`sudo chown root somefile.txt`
+`sudo chown root algúnarchivo.txt`.
 
-Now try to delete the file without using sudo. You are not allowed. Look at the permissions. Why is this not allowed?
+Ahora intenta borrar el archivo sin usar sudo. No está permitido. Mira los permisos. ¿Por qué no está permitido?
 
-#### Links
+#### Enlaces
 
-Since we have files and folders located all over our file system, it becomes difficult to identify where many of these are located. Fortunately, we can create a link (also known as an alias) to a file or folder using the `ln` command. The structure looks like this:
+Dado que tenemos archivos y carpetas ubicados por todo nuestro sistema de archivos, resulta difícil identificar dónde se encuentran muchos de ellos. Afortunadamente, podemos crear un enlace (también conocido como alias) a un archivo o carpeta utilizando el comando `ln`. La estructura es la siguiente:
 
-`ln path_to_link name_of_link`
+`ln ruta_al_enlace nombre_del_enlace`.
 
-There are two kinds of links we can make, hard and symbolic links - let's see how they work!
+Hay dos tipos de enlaces que podemos hacer, enlaces duros y simbólicos - ¡vamos a ver cómo funcionan!
 
-#### Hard Links
+#### Enlaces duros
 
-Let's create a file called `learn.txt` in our `Desktop` folder (type in `cd /Users/$USER/Desktop` if you need to get there). We can open up our `learn.txt` file using `open learn.txt` and let's add the text "Learning about links!".
+Vamos a crear un archivo llamado `aprender.txt` en nuestra carpeta `Desktop` (teclea `cd /Usuarios/$USUARIO/Desktop` si necesitas llegar allí). Podemos abrir nuestro archivo `learn.txt` usando `open learn.txt` y vamos a añadir el texto "¡Aprendiendo sobre enlaces!".
 
-Now let's create a link to this file! We can call our link `first_link`. To do this we use the `ln` command and type `ln learn.txt first_link`. Now if we `cat first_link` we should see the output "Learning about links!".
+Ahora vamos a crear un enlace a este archivo. Podemos llamar a nuestro enlace `primer_enlace`. Para ello usamos el comando `ln` y escribimos `ln aprender.txt primer_enlace`. Ahora si `cat primer_enlace` deberíamos ver la salida "¡Aprendiendo sobre enlaces!".
 
-If we decide to move our `learn.txt` file anywhere we still have a link to it through `first_link`! Pretty awesome!
+Si decidimos mover nuestro fichero `aprender.txt` a cualquier sitio, ¡seguiremos teniendo un enlace a él a través de `primer_enlace`! ¡Impresionante!
 
-If we decided to delete our `learn.txt` file, what happens to our hard link? Let's `rm learn.txt` and then `cat first_link`. We still see that we have a link! This might seem strange; shouldn't a link be broken if a file is removed? Not with hard links! You can think of a hard link like a direct copy of a file. If the file is removed, the link still exists.
+Si decidimos borrar nuestro fichero `learn.txt`, ¿qué pasa con nuestro enlace duro? Vamos a `rm learn.txt` y luego `cat first_link`. ¡Todavía vemos que tenemos un enlace! Esto puede parecer extraño; ¿no debería romperse un enlace si se elimina un archivo? Con los enlaces duros, ¡no! Un enlace duro es como una copia directa de un fichero. Si se elimina el archivo, el enlace sigue existiendo.
 
-#### Symbolic Links
+#### Enlaces simbólicos
 
-We saw that when we remove the original file, any hard links still remain and contain the entire source file. This is usually not what we want, since we usually want a reference to some file and not a direct copy. To create a reference instead of a copy, let's make a symbolic link.
+Vimos que cuando eliminamos el archivo original, los enlaces duros siguen existiendo y contienen todo el archivo fuente. Esto normalmente no es lo que queremos, ya que normalmente queremos una referencia a algún archivo y no una copia directa. Para crear una referencia en lugar de una copia, hagamos un enlace simbólico.
 
-To create a symbolic link, we use the `-s` flag when creating a link. Let's create a new file called `learn_again.txt` and then create a symbolic link using `ln -s learn_again.txt first_sym_link`. If we `cat first_sym_link` we do not get any errors! But if we delete or move `learn_again.txt`, our `first_sym_link` will be broken!
+Para crear un enlace simbólico, usamos la bandera `-s` cuando creamos un enlace. Creemos un nuevo fichero llamado `aprender_otra vez.txt` y luego creemos un enlace simbólico usando `ln -s aprender_otra vez.txt primer_enlace_simbolico`. Si `cat first_sym_link` no obtenemos ningún error. Pero si borramos o movemos `aprender_otra vez.txt`, ¡nuestro `first_sym_link` se romperá!
 
-We can also use symbolic links for folders as well, which makes it very useful if we need to access a folder but do not remember the path. However, if your original file/folder path changes or is removed , the symbolic link **will** break!
+También podemos utilizar enlaces simbólicos para carpetas, lo que resulta muy útil si necesitamos acceder a una carpeta pero no recordamos la ruta. Sin embargo, si la ruta original del archivo/carpeta cambia o se elimina, el enlace simbólico **se romperá**.
 
 
 
-### { Redirection. }
+### { Redirección. }
 
-#### Objectives
+#### Objetivos
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, usted debe ser capaz de:
 
-* Explain what redirection is
-* Explain the difference between `>`, `>>`, and `<`
-* Use redirection to work more effectively in Terminal
+* Explicar qué es la redirección
+* Explicar la diferencia entre `>`, `>>` y `<`.
+* Utilizar la redirección para trabajar más eficazmente en Terminal
 
-#### Redirection
+#### Redirección
 
-Sometimes instead of simply displaying the output from a command to the terminal, it's useful to take the result output of a command and send it somewhere else. We call this "redirection" and it is denoted by `>>` or `>`. Let's start with a simple example using the `echo` command.
+A veces, en lugar de simplemente mostrar la salida de un comando en la terminal, es útil tomar la salida resultante de un comando y enviarla a otro lugar. A esto lo llamamos "redirección" y se denota con `>>` o `>`. Empecemos con un ejemplo simple usando el comando `echo`.
 
-The `echo` command is useful for displaying text to the terminal, but many times it is more useful to take that text and redirect it to a file. In Terminal, type the command `echo Hello World > hello.txt`. Then, using the `cat` command, let's see what we just did by typing `cat hello.txt`. All we did here is take the text "Hello World" and instead of displaying it to the terminal, we sent it to a file called `hello.txt`!
+El comando `echo` es útil para mostrar texto en la terminal, pero muchas veces es más útil tomar ese texto y redirigirlo a un archivo. En Terminal, escriba el comando `echo Hola Mundo > hola.txt`. Luego, usando el comando `cat`, veamos lo que acabamos de hacer escribiendo `cat hola.txt`. Todo lo que hicimos aquí es tomar el texto "Hola Mundo" y en lugar de mostrarlo en la terminal, ¡lo enviamos a un archivo llamado `hola.txt`!
 
-Run the same command again but with slightly different text: `echo Hello Universe > hello.txt`. Now cat the file again. Notice that your new text completely overwrote the old text: you should see that "Hello World" has been replaced by "Hello Universe." In other words, when you use `>`, whatever text you're echoing into the file will completely overwrite any text that might already be in the file.
+Ejecute el mismo comando de nuevo pero con un texto ligeramente diferente: `echo Hola Universo > hola.txt`. Ahora vuelve a ver el fichero. Observa que tu nuevo texto ha sobrescrito completamente el antiguo: deberías ver que "Hola Mundo" ha sido reemplazado por "Hola Universo". En otras palabras, cuando usas `>`, el texto que estás introduciendo en el fichero sobrescribirá completamente cualquier texto que ya estuviera en el fichero.
 
-Maybe this is what you want, but maybe not. What if you're trying to append some text to the end of the file, rather than overwriting the text? In this case, use `>>` instead. Try it out: `echo Hello World >> hello.txt`. Now cat the file. You should see the following:
+Tal vez esto es lo que quieres, pero tal vez no. ¿Y si lo que quieres es añadir texto al final del fichero, en lugar de sobrescribirlo? En este caso, utilice `>>` en su lugar. Pruébalo: `echo Hola Mundo >> hola.txt`. Ahora abre el fichero. Deberías ver lo siguiente:
 
 ```
-Hello Universe
-Hello World
+Hola Universo
+Hola Mundo
 ```
 
-One very common use case for redirection is to put small pieces of text in a file. Instead of opening a text editor, typing in some text, saving it and closing the file we can do this all in one step.
+Un caso de uso muy común para la redirección es poner pequeños trozos de texto en un archivo. En lugar de abrir un editor de texto, escribir algo de texto, guardarlo y cerrar el archivo, podemos hacerlo todo en un solo paso.
 
-#### Redirection with Input
+#### Redirección con Input
 
-So far we have seen redirection using `>` and `>>`. These arrows indicate redirection with standard output (take something and output it to something else). However, we can also use redirection with input as well using the `<` arrow. Let's use a command called `sort`, which sorts a file alphabetically. Imagine we have a file called `names.txt` with the following names:
+Hasta ahora hemos visto la redirección usando `>` y `>>`. Estas flechas indican redirección con salida estándar (tomar algo y enviarlo a otra cosa). Sin embargo, también podemos utilizar la redirección con la entrada utilizando la flecha `<`. Usemos un comando llamado `sort`, que ordena un fichero alfabéticamente. Imaginemos que tenemos un fichero llamado `nombres.txt` con los siguientes nombres:
 
 ```
 Bob
@@ -606,7 +607,7 @@ Jim
 Amy
 ```
 
-If we want to sort this file, we can type `sort names.txt` and it will output
+Si queremos ordenar este fichero, podemos teclear `ordenar nombres.txt` y saldrá
 
 ```
 Amy
@@ -615,101 +616,90 @@ Jim
 Tom
 ```
 
-Now what if we want to take the contents of `names.txt`, redirect that to the `sort` command, and then send _that_ output to a file called `sorted.txt`? The redirection will look like this: `sort < names.txt > sorted.txt`. This will now create a new file called `sorted.txt` with the names sorted alphabetically!
+¿Y si queremos tomar el contenido de `names.txt`, redirigirlo al comando `sorted`, y luego enviar _esa_ salida a un fichero llamado `sorted.txt`? La redirección se vería así: `clasificar < nombres.txt >clasificado.txt`. Esto creará un nuevo fichero llamado `ordenado.txt` con los nombres ordenados alfabéticamente.
 
-This might seem a bit strange, but try typing these commands and see what information you can output and redirect. As we see right now, we are only using the `sort` command, but what would happen if we wanted to use other commands along with sort? We would somehow need to connect each of these commands together. We connect these commands together through something called "pipes."
+Esto puede parecer un poco extraño, pero pruebe a escribir estos comandos y vea qué información puede obtener y redirigir. Como vemos ahora mismo, sólo estamos usando el comando `sort`, pero ¿qué pasaría si quisiéramos usar otros comandos junto con sort? De alguna manera necesitaríamos conectar cada uno de estos comandos. Conectamos estos comandos entre sí a través de algo llamado "pipes".
 
 
 
 ### { Piping. }
 
-#### Objectives
+#### Objetivos
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, usted debe ser capaz de:
 
-* Explain what the `head`, `tail`, `sort`, `uniq`, `wc` and `grep` commands do
-* Define what piping is
-* Understand use cases for piping
-* Use piping to better work in Terminal
+* Explicar qué hacen los comandos `head`, `tail`, `sort`, `uniq`, `wc` y `grep
+* Definir qué es la canalización
+* Entender los casos de uso de piping
+* Usar piping para trabajar mejor en Terminal
 
-#### Piping
+#### Canalización
 
-At the end of the last chapter, we saw how we could use redirection to combine a couple of commands into one. In that case, in a single line we were able to both sort a text file and output the contents to a new file.
+Al final del último capítulo, vimos cómo podíamos usar la redirección para combinar un par de comandos en uno. En ese caso, en una sola línea pudimos ordenar un archivo de texto y enviar su contenido a un nuevo archivo.
 
-But what if we want to chain even more commands together? This is where piping comes into play. Before we learn about piping, though, let's learn/review a couple other terminal commands.
+Pero, ¿y si queremos encadenar aún más comandos? Aquí es donde entra en juego el piping. Antes de aprender sobre piping, sin embargo, vamos a aprender/revisar un par de otros comandos de terminal.
 
-`head` - display the first lines of a file (using the `-n` flag we can specify the number of lines)
+`head` - muestra las primeras líneas de un fichero (usando la bandera `-n` podemos especificar el número de líneas)
 
-`tail` - display the last lines of a file (using the `-n` flag we can specify the number of lines)
+`tail` - muestra las últimas líneas de un fichero (usando la bandera `-n` podemos especificar el número de líneas)
 
-`sort` - sort lines of a text file
+`sort` - ordena las líneas de un fichero de texto
 
-`uniq` - removes duplicated lines (your data **must** be sorted for this to work)
+`uniq` - elimina las líneas duplicadas (sus datos **deben** estar ordenados para que esto funcione)
 
-`wc` - word, line, character and byte count
+`wc` - cuenta palabras, líneas, caracteres y bytes
 
-Now let's create two files - `first.txt` which contains the text
-
-```
-First
-Second
-Third
-```
-
-And `second.txt` which contains:
+Ahora vamos a crear dos archivos - `first.txt` que contiene el texto
 
 ```
-Fourth
-Fifth
-Sixth
+Primer
+Segundo
+Tercero
 ```
 
-If we want to concatenate (join) these two files together, we use the `cat` command:
-
-`cat first.txt second.txt` (make sure the files and commands are separated by a space).
-
-But what happens if we want to concatenate these two files and then find the word count? What if we want to concatenate and then sort it? This is where we need piping! You can think of a pipe as a connection between the output of one command into the input of another command. So once we concatenate two files we then want to send (or pipe) the result of that to another command. We can even combine this with redirection!
-
-To pipe a command we use the `|` character. So if we want to pipe `cat` into `sort` it would look like this:
-
-`cat first.txt second.txt | sort` or `cat first.txt second.txt | sort | head -n 2`
-
-Take a look at this command and try to figure out what it's doing. You'll find a step-by-step answer below.
-
-`cat first.txt second.txt | sort | tail -n 3 | head -n 1`
-
-1. Concatenate the two files first.txt and second.txt
-2. Sort the results
-3. Find the last 3 lines
-4. Find the first line of those last 3 lines
-
-This is how we can find the third from last line in a file (without knowing how many lines the file has).
-
-#### `grep`
-
-Let's examine another useful command called `grep` which is extremely powerful for finding text. On its own it is helpful, but it is quite useful when piped with `cat`. Let's try a simple example with `cat first.txt | grep First` - what do you see?
-
-You should see the word `First` output to the terminal. This is because `grep` searched the file for the text `First` and found a match!
-
-Notice that if `grep` doesn't find a match, it won't output anything. If it finds multiple matches, it will print them all. Try out these commands and see what `grep` returns to you!
+Y `second.txt` que contiene:
 
 ```
-cat first.txt second.txt | grep Nope
-cat first.txt second.txt | grep th
+Cuarto
+Quinto
+Sexto
 ```
 
-Let's look at another example. Imagine you have a file called `petnames.txt`, and inside you have the following list of names:
+Si queremos concatenar (unir) estos dos archivos, utilizamos el comando `cat`:
+
+`cat primer.txt segundo.txt` (asegúrate de que los archivos y los comandos están separados por un espacio).
+
+Pero, ¿qué pasa si queremos concatenar estos dos archivos y luego encontrar el recuento de palabras? ¿Y si queremos concatenarlos y luego ordenarlos? Aquí es donde necesitamos una tubería. Puedes pensar en una tubería como una conexión entre la salida de un comando y la entrada de otro comando. Así, una vez concatenados dos archivos, queremos enviar (o canalizar) el resultado a otro comando. Incluso podemos combinar esto con la redirección.
+
+Para canalizar un comando utilizamos el carácter `|`. Así que si queremos pasar `cat` a `sort` se vería así:
+
+`cat first.txt second.txt | sort` o `cat first.txt second.txt | sort | head -n 2`.
+
+Echa un vistazo a este comando e intenta averiguar qué está haciendo. Encontrarás una respuesta paso a paso más abajo.
+
+`cat primer.txt segundo.txt | ordenar | tail -n 3 | head -n 1`
+
+1. Concatenar los dos archivos first.txt y second.txt
+2. Ordenar los resultados
+3. Buscar las 3 últimas líneas
+4. Busca la primera línea de esas 3 últimas líneas
+
+Así es como podemos encontrar la antepenúltima línea de un fichero (sin saber cuántas líneas tiene el fichero).
+
+#### `grep
+
+Examinemos otro comando útil llamado `grep` que es extremadamente poderoso para encontrar texto. Por sí solo es útil, pero es bastante útil cuando se combina con `cat`. Intentemos un ejemplo simple con `cat primer.txt | grep Primer` - ¿qué ves?
+
+Deberías ver la palabra `First` en el terminal. Esto se debe a que `grep` ha buscado en el fichero el texto `Primero` y ha encontrado una coincidencia.
+
+Observa que si `grep` no encuentra ninguna coincidencia, no mostrará nada. Si encuentra varias coincidencias, las imprimirá todas. Prueba estos comandos y mira lo que te devuelve `grep`.
 
 ```
-Lassie
-Moxie
-Whiskey
-Fido
-Lassie
-Moxie
+cat primero.txt segundo.txt | grep Nope
+cat primero.txt segundo.txt | grep th
 ```
 
-We see here there are quite a few duplicates, so let's try to use the `uniq` command to remove these duplicate names. The problem is, when we run `uniq petnames.txt` we get the following
+Veamos otro ejemplo. Imagina que tienes un fichero llamado `nombresdeperros.txt`, y dentro tienes la siguiente lista de nombres:
 
 ```
 Lassie
@@ -720,9 +710,20 @@ Lassie
 Moxie
 ```
 
-If we look back at our definition of how the `uniq` command works, we see that our data must be sorted! So how can we first use `sort` on `petnames.txt` then attach the `uniq` command? Piping to the rescue!
+Vemos aquí que hay bastantes duplicados, así que vamos a intentar usar el comando `uniq` para eliminar estos nombres duplicados. El problema es que cuando ejecutamos `uniq petnames.txt` obtenemos lo siguiente
 
-`sort petnames.txt | uniq` gives us
+```
+Lassie
+Moxie
+Whiskey
+Fido
+Lassie
+Moxie
+```
+
+Si volvemos a nuestra definición de cómo funciona el comando `uniq`, veremos que nuestros datos deben estar ordenados. Entonces, ¿cómo podemos usar primero `sort` en `petnames.txt` y luego adjuntar el comando `uniq`? ¡Piping al rescate!
+
+El comando `sort petnames.txt | uniq` nos da
 
 ```
 Fido
@@ -731,228 +732,228 @@ Moxie
 Whiskey
 ```
 
-This looks great! But this text is just being output to the terminal, what if we want to output this text to a new file called `petnames_sorted.txt`? We can combine piping with redirection and use `sort petnames.txt | uniq > petnames_sorted.txt`. Now if we `cat petnames_sorted.txt` we should see our four unique sorted names!
+Tiene una pinta estupenda. Pero este texto sólo se está mostrando en el terminal, ¿qué pasa si queremos mostrar este texto en un nuevo archivo llamado `nombres_de_mascota_clasificados.txt`? Podemos combinar piping con redirección y usar `sort petnames.txt | uniq > petnames_sorted.txt`. Ahora si `cat nombres_mascota_clasificados.txt` deberíamos ver nuestros cuatro nombres únicos clasificados.
 
 
 
-## { Permissions, Redirection, and Piping Exercise. }
+## { Ejercicio de Permisos, Redirección y Canalización. }
 
-#### Part I (Permissions and links)
+#### Parte I (Permisos y enlaces)
 
-Write terminal commands to do the following:
+Escribe comandos de terminal para hacer lo siguiente:
 
-1. Create a file called `restricted.txt`.
-2. Change the permissions on the `restricted.txt` file to allow the owner to read and write to the `restricted.txt` file. Do this using the **Octal** Notation.
-3. Change the permissions on the `restricted.txt` file to only allow the owner, group and everyone to read and write and execute the `restricted.txt` file. Do this using the **Symbolic** notation.
-4. Create a folder called `secret_files`. Inside the `secret_files` folder create a file called `first_secret.txt` and another folder called `classified`. Inside of the `classified` folder create a file called `super_secret.txt`.
-5. Change the permissions on the secret\_files to only allow the owner and group to read, write and execute in all the files and folders inside of secret\_files. Do this using the Octal Notation.
-6. Create a hard link for the `restricted.txt` called `hard_link`.
-7. Create a symbolic link for the `classified` folder called `classified_link`.
+1. Crear un archivo llamado `restricted.txt`.
+2. 2. Cambia los permisos del fichero `restricted.txt` para permitir al propietario leer y escribir en el fichero `restricted.txt`. Hazlo utilizando la Notación **Octal**.
+3. 3. Cambia los permisos del archivo `restricted.txt` para que sólo el propietario, el grupo y todos puedan leer, escribir y ejecutar el archivo `restricted.txt`. Hazlo utilizando la notación **Simbólica**.
+4. Crea una carpeta llamada `archivos_secretos`. Dentro de la carpeta `secret_files` crea un fichero llamado `first_secret.txt` y otra carpeta llamada `classified`. Dentro de la carpeta `classified` crea un fichero llamado `super_secret.txt`.
+5. 5. Cambia los permisos de los archivos secretos para que sólo el propietario y el grupo puedan leer, escribir y ejecutar en todos los archivos y carpetas dentro de los archivos secretos. Hazlo utilizando la Notación Octal.
+6. Crea un enlace duro para el `restricted.txt` llamado `hard_link`.
+7. 7. Crea un enlace simbólico para la carpeta `classified` llamado `classified_link`.
 
-#### Part II (Piping and Redirection)
+#### Parte II (Canalización y Redirección)
 
-For the following exercises, create a text file called `vegetables.txt` with the following text:
+Para los siguientes ejercicios, crea un archivo de texto llamado `vegetables.txt` con el siguiente texto:
 
 ```
-Lettuce
-Amaranth
-Beet
-Celery
-Kale
-Dill
-Cabbage
-Broccoli
-Lettuce
-Amaranth
-Beet
-Spinach
-Chard
-Broccoli
-Cabbage
-Dill
+Lechuga
+Amaranto
+Remolacha
+Apio
+Col rizada
+Eneldo
+Col
+Brécol
+Lechuga
+Amaranto
+Remolacha
+Espinacas
+Acelga
+Brécol
+Col
+Eneldo
 ```
 
-Write the following terminal commands to do the following
+Escribe los siguientes comandos de terminal para hacer lo siguiente
 
-1. Sort `vegetables.txt`.
-2. Count the number of lines in `vegetables.txt`.
-3. Create a file called vegetables\_sorted.txt which contains all the unique vegetables sorted in ascending order in vegetables.txt (do this without the touch command).
-4. Create a file called `last_three.txt` which contains the last three vegetables in the `vegetables.txt` file (do this without the `touch` command).
-5. Count the number of lines the word "Broccoli" appears on (using `wc` and `grep`).
-
-
+1. Ordenar `vegetables.txt`.
+2. Contar el número de líneas en `vegetables.txt`.
+3. Cree un archivo llamado `verduras_ordenadas.txt` que contenga todas las verduras únicas ordenadas de forma ascendente en verduras.txt (hágalo sin el comando touch).
+4. Cree un archivo llamado `últimas_tres.txt` que contenga las tres últimas verduras del archivo `verduras.txt` (haga esto sin el comando `tocar`).
+5. 5. Cuente el número de líneas en las que aparece la palabra "Brócoli" (usando `wc` y `grep`).
 
 
 
-## Development Tools
+
+
+## Herramientas de desarrollo
 
 #### Visual Studio Code
 
-Visual Studio Code or VS Code is an IDE. IDE stands for Integrated Development Environment. It is the software that you will be using to write most of your code. It is designed to help you develop your apps quickly, focusing on the problems that you need to solve instead of having to search online for minor details.
+Visual Studio Code o VS Code es un IDE. IDE significa Entorno de Desarrollo Integrado. Es el software que utilizarás para escribir la mayor parte de tu código. Está diseñado para ayudarte a desarrollar tus aplicaciones rápidamente, centrándose en los problemas que necesitas resolver en lugar de tener que buscar en Internet detalles menores.
 
-**Auto-complete**
+**Autocompletar
 
-One of the most important features of an IDE is that it provides _auto-completion_. This means that it will give you suggestions of what you can write next, while you are typing something.
+Una de las características más importantes de un IDE es que proporciona _autocompletado_. Esto significa que te dará sugerencias de lo que puedes escribir a continuación, mientras estás escribiendo algo.
 
-For example, when writing a CSS property, VSC will tell you what values you can assign to this property.
+Por ejemplo, al escribir una propiedad CSS, VSC te dirá qué valores puedes asignar a esta propiedad.
 
-![](<.content/image (166).png>)
+![](<.contenido/imagen (166).png>)
 
-**File tree view**
+**Vista de árbol de archivos**
 
-The reason why we call an IDE _integrated_ is that you almost don't need to leave the window when you are write your code. For example, creating, renaming and moving files can be done directly from the IDE. This functionality can be achieved from something called a **tree view**. You can find this view on the left side of your IDE.
+La razón por la que llamamos a un IDE _integrado_ es que casi no necesitas salir de la ventana cuando estás escribiendo tu código. Por ejemplo, crear, renombrar y mover archivos se puede hacer directamente desde el IDE. Esta funcionalidad se puede conseguir desde algo llamado **vista de árbol**. Puedes encontrar esta vista en la parte izquierda de tu IDE.
 
-![](<.content/image (177).png>)
+![](<.contenido/imagen (177).png>)
 
-**Finding files**
+**Buscar archivos**
 
-When working with big projects, you will often need to find a file quickly, without having to go through the tree view manually.
+Cuando trabajes con proyectos grandes, a menudo necesitarás encontrar un archivo rápidamente, sin tener que recorrer la vista de árbol manualmente.
 
-![](<.content/image (198).png>)
+![](<.contenido/imagen (198).png>)
 
-**Enable formatting on save**
+**Activar formato al guardar**
 
-To automatically give your code the right format:
+Para dar automáticamente a tu código el formato adecuado:
 
-* In Visual Studio open the settings file (see [https://code.visualstudio.com/docs/getstarted/settings#\_creating-user-and-workspace-settings](https://code.visualstudio.com/docs/getstarted/settings#\_creating-user-and-workspace-settings))
-* Search for `editor format`
-* Set `editor.formatOnSave` and `editor.formatOnPaste` to `true`
+* En Visual Studio, abra el archivo de configuración (consulte [https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings](https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings)).
+* Busque `editor format`.
+* Establecer `editor.formatOnSave` y `editor.formatOnPaste` a `true`.
 
-### { OPTIONAL } Visual Studio Code Extensions For Web Development
+### { OPTIONAL } Extensiones de código de Visual Studio para desarrollo web
 
-Visual studio code offers a wide range of extensions. Here is how to install the extension.
+Visual studio code ofrece una amplia gama de extensiones. Aquí se explica cómo instalar la extensión.
 
-Press **SHIFT+COMMAND (or Windows)+X** or just click on the extension icon of visual studio code. Search for the extension and press install
+Pulse **SHIFT+COMMAND (o Windows)+X** o simplemente haga clic en el icono de extensión de visual studio code. Busca la extensión y pulsa instalar
 
-![](<.content/image (88).png>)
+![](<.contenido/imagen (88).png>)
 
-Here are some visual studio code extensions for web development. The choices of the extension are ones personal opinion.
+Aquí hay algunas extensiones de visual studio code para el desarrollo web. La elección de la extensión es una opinión personal.
 
-#### 1: Javascript (ES6) Code Snippets
+#### 1: Fragmentos de código Javascript (ES6)
 
-No need to mention that JavaScript is the core of web development. There are lots of code snippets that we used on a daily basis and this extension helps you by not writing that repetitive code again and again.
+No es necesario mencionar que JavaScript es el núcleo del desarrollo web. Hay un montón de fragmentos de código que utilizamos a diario y esta extensión le ayuda a no escribir ese código repetitivo una y otra vez.
 
-It provides JavaScript, TypeScript, Vue, React, and HTML code snippets. This is a must-have extension for web development.
+Proporciona JavaScript, TypeScript, Vue, React, y fragmentos de código HTML. Esta es una extensión imprescindible para el desarrollo web.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
 #### 2: CSS Peek
 
-As its name suggests, this extension lets you jump to the CSS code using classes and IDs.
+Como su nombre indica, esta extensión te permite saltar al código CSS usando clases e IDs.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 3: Auto Close Tag
+#### 3: Etiqueta de cierre automático
 
-This extension automatically adds the closing tag of HTML and XML.
+Esta extensión añade automáticamente la etiqueta de cierre de HTML y XML.
 
-Link:[ https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+Enlace:[ https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
 #### 4: ESLint
 
-ESLint is the linting utility for JavaScript. It checks your code for common errors and lets you know in the editor itself. It’s like a virtual peer who is validating your code while you are writing it.
+ESLint es la utilidad de linting para JavaScript. Comprueba tu código en busca de errores comunes y te lo hace saber en el propio editor. Es como un compañero virtual que valida tu código mientras lo escribes.
 
-Link:[ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+Enlace:[ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarlo buscando el nombre en la sección de extensiones del código de visual studio.
 
-Before installing ESLint in visual studio, install it as a global package first. `npm install -g eslint`
+Antes de instalar ESLint en visual studio, instálalo primero como paquete global. `npm install -g eslint`.
 
-#### 5: Prettier – Code formatter
+#### 5: Prettier - Formateador de código
 
-This extension performs the formatting of the JavaScript, CSS, and HTML code.
+Esta extensión realiza el formateo del código JavaScript, CSS y HTML.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 6: Path Intellisense
+#### 6: Intellisense de ruta
 
-Importing code from other files is what everyone does on a daily basis. This extension makes the development time faster by autocompleting file names.
+Importar código de otros archivos es lo que todo el mundo hace a diario. Esta extensión agiliza el tiempo de desarrollo autocompletando los nombres de los archivos.
 
-You type the name of the file in statements and it will search and give you suggestions.
+Escribes el nombre del archivo en las sentencias y te buscará y dará sugerencias.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarlo buscando el nombre en la sección de extensiones del código de visual studio.
 
 #### 7: GitLens
 
-We use Git almost every day of our life. GitLens is the visual studio code plugin to supercharge git capabilities.
+Usamos Git casi todos los días de nuestra vida. GitLens es el plugin de visual studio code para potenciar las capacidades de git.
 
-With GitLens, it’s so easy to view code authorship, check commit number, view changes between the last commit and existing changes, and so on
+Con GitLens, es muy fácil ver la autoría del código, comprobar el número de commit, ver los cambios entre el último commit y los cambios existentes, etc.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)\
-You can install it by searching the name on the extension section of the visual studio code.
+Enlace: [https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)\
+Puedes instalarlo buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 8: Project Manager
+#### 8: Gestor de proyectos
 
-Do you work on multiple projects and switch back and forth? I know I do and the project manager has been a savior to manage multiple projects in visual studio code
+¿Trabajas en varios proyectos y cambias de uno a otro? Sé que lo hago y el gestor de proyectos ha sido un salvador para gestionar múltiples proyectos en visual studio code
 
-Link: [https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
-You can install it by searching the name on the extension section of the visual studio code.
+Puedes instalarlo buscando el nombre en la sección de extensiones de visual studio code.
 
-#### 9: Live Server
+#### 9: Servidor Live
 
-Live Server extension provides the live preview of your web application right within the editor.
+La extensión Live Server proporciona una vista previa en vivo de tu aplicación web directamente desde el editor.
 
-This is very handy and useful for the front end developers.
+Esto es muy práctico y útil para los desarrolladores front-end.
 
-Link:[ https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)\
-You can install it by searching the name on the extension section of the visual studio code.
+Enlace:[ https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)\
+Puedes instalarla buscando el nombre en la sección de extensiones del código de Visual Studio.
 
-#### 10: Debugger for Chrome
+#### 10: Depurador para Chrome
 
-This extension brought the powerful chrome debugger right into the visual studio code.
+Esta extensión trae el potente depurador de Chrome directamente al código de Visual Studio.
 
-It is very useful for front-end developers to perform the testing and debugging.
+Es muy útil para los desarrolladores front-end para realizar las pruebas y depuración.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)\
-You can install it by searching the name on the extension section of the visual studio code.
+Enlace: [https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)\
+Puedes instalarlo buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 11: Better Comments
+#### 11: Mejores comentarios
 
-This extension helps you to create more human-friendly and easy-to-read comments
+Esta extensión te ayuda a crear comentarios más amigables y fáciles de leer.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)\
-You can install it by searching the name on the extension section of the visual studio code.
+Enlace: [https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)\
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 12: Code time
+#### 12: Tiempo de código
 
-This extension tracks your development time and provides you with useful stats such as how many hours you have code today etc.
+Esta extensión realiza un seguimiento de tu tiempo de desarrollo y te proporciona estadísticas útiles como cuántas horas has codificado hoy, etc.
 
-It’s pretty useful to keep track and see the progress. This is not strictly for web development only, anyone can use this extension.
+Es bastante útil para hacer un seguimiento y ver el progreso. Esto no es estrictamente para el desarrollo web sólo, cualquiera puede utilizar esta extensión.
 
-Link: [https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)\
-You can install it by searching the name on the extension section of the visual studio code.
+Enlace: [https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)\
+Puedes instalarla buscando el nombre en la sección de extensiones del código de visual studio.
 
-#### 13: Settings Sync
+#### 13: Sincronización de ajustes
 
-I use a different machine for my work and personal use. I use visual studio code in both machines, however, I don’t want to repeat the same steps to configure the editor every time.
+Uso una máquina diferente para mi trabajo y para uso personal. Uso visual studio code en ambas máquinas, sin embargo, no quiero repetir los mismos pasos para configurar el editor cada vez.
 
-Enters Setting Sync extension. It creates and stores your configuration in Github gist and synchronizes wherever you want. Simple and awesome!
+Entra en la extensión Setting Sync. Crea y almacena tu configuración en Github gist y sincroniza donde quieras. ¡Simple e impresionante!
 
-Link: [https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)\
-You can install it by searching the name on the extension section of the visual studio code.
-
-
-
-## **More Resources**
-
-* [Tutorial: Terminal for Beginners!](https://medium.com/@grace.m.nolan/terminal-for-beginners-e492ba10902a)
-* [Basic commands tutorial 10 mins](https://youtu.be/vhZLTp6N4XA)
-* [Intro to Ubuntu and useful command tutorial 45 mins](https://youtu.be/KSh9-6FIu1w)
+Enlace: [https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)\
+Puedes instalarlo buscando el nombre en la sección de extensiones del código de visual studio.
 
 
 
-It's alright if you get stuck or if something doesn't look right! When that happens, please ask your teachers or classmates for help in Slack, or use the **#support-coding** channel.
+## **Más Recursos**
+
+* [Tutorial: ¡Terminal para principiantes!](https://medium.com/@grace.m.nolan/terminal-for-beginners-e492ba10902a)
+* [Tutorial de comandos básicos 10 mins](https://youtu.be/vhZLTp6N4XA)
+* [Introducción a Ubuntu y tutorial de comandos útiles 45 mins](https://youtu.be/KSh9-6FIu1w)
+
+
+
+No pasa nada si te quedas atascado o si algo no te parece correcto. Cuando eso ocurra, por favor pide ayuda a tus profesores o compañeros en Slack, o utiliza el canal **#support-coding**.
 
 
 
@@ -961,268 +962,268 @@ It's alright if you get stuck or if something doesn't look right! When that happ
 
 
 {% hint style="info" %}
-**Everything below is optional and not a requirement of our course. Students who like to challenge themselves can continue with the Advanced Level.**
+**Todo lo que sigue es opcional y no es un requisito de nuestro curso. Los estudiantes a los que les guste desafiarse a sí mismos pueden continuar con el Nivel Avanzado.**
 {% endhint %}
 
-## Advanced Level - 1  { OPTIONAL }
+## Nivel Avanzado - 1 { OPTIONAL }
 
-### { Terminal Environment. }
+### { Entorno Terminal. }
 
-#### Objectives:
+#### Objetivos:
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, usted debe ser capaz de:
 
-* Describe what a terminal environment is
-* Create and modify terminal environment variables, including the `PATH`
-* Save environment variables to a configuration file
+* Describir qué es un entorno de terminal
+* Crear y modificar variables de entorno de terminal, incluyendo el `PATH
+* Guardar variables de entorno en un fichero de configuración
 
-#### What is your terminal's environment?
+#### ¿Cuál es el entorno de su terminal?
 
-A terminal's environment is a list of settings that can be referenced by programs. To see what your terminal's environment looks like right now, try typing `env` in your terminal. You should see output similar to the following:
+El entorno de un terminal es una lista de configuraciones que pueden ser referenciadas por los programas. Para ver cómo es el entorno de tu terminal en este momento, intenta escribir `env` en tu terminal. Debería ver una salida similar a la siguiente:
 
 ```
-rvm_bin_path=/Users/tim/.rvm/bin
+rvm_bin_path=/Usuarios/tim/.rvm/bin
 TERM_PROGRAM=Apple_Terminal
-GEM_HOME=/Users/tim/.rvm/gems/ruby-2.3.1
+GEM_HOME=/Usuarios/tim/.rvm/gems/ruby-2.3.1
 TERM=xterm-256color
 SHELL=/bin/bash
 CLICOLOR=1
-IRBRC=/Users/tim/.rvm/rubies/ruby-2.3.1/.irbrc
-TMPDIR=/var/folders/5s/zstwqxy52pl_lq_lr3b5v7nc0000gn/T/
+IRBRC=/Usuarios/tim/.rvm/rubies/ruby-2.3.1/.irbrc
+TMPDIR=/var/carpetas/5s/zstwqxy52pl_lq_lr3b5v7nc0000gn/T/
 Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.Q7TcyOvK4P/Render
 TERM_PROGRAM_VERSION=361.1
-OLDPWD=/Users/tim
+OLDPWD=/Usuarios/tim
 TERM_SESSION_ID=281162A1-5C58-4285-9A35-AC9306923C34
-USER=tim
+USUARIO=tim
 __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
 LSCOLORS=GxFxCxDxBxegedabagaced
 PATH=/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tim/.rvm/bin
-PWD=/Users/tim/Projects/Rithm/prework
+PWD=/Usuarios/tim/Proyectos/Rithm/prework
 .
 .
 .
 
 ```
 
-Each word on the left side of the equal sign is called an **environment variable**. The value on the right side is the value of the variable.
+Cada palabra a la izquierda del signo igual se denomina **variable de entorno**. El valor a la derecha es el valor de la variable.
 
-#### Using environment variables
+#### Uso de variables de entorno
 
-In the terminal, you can see what value an environment variable has by using `echo`. When referencing an environment variable, you must use the `$` as a prefix. In other words, to print the value for the environment variable `PWD`, the command would be:
+En el terminal, puedes ver qué valor tiene una variable de entorno utilizando `echo`. Cuando hagas referencia a una variable de entorno, debes utilizar `$` como prefijo. En otras palabras, para imprimir el valor de la variable de entorno `PWD`, el comando sería:
 
 ```
 echo $PWD
 ```
 
-Try that in your terminal. You should get the same output as the output for the command `pwd`.
+Prueba esto en tu terminal. Deberías obtener la misma salida que con el comando `pwd`.
 
-#### Creating environment variables
+#### Creación de variables de entorno
 
-Now let's make our own environment variable. Go to your home directory and create a folder called `Projects`. Now let's make an environment variable called `PROJDIR` (environment variables are usually all caps) that keeps track of the path to your projects directory. To create an environment variable, you can use the `export` command. On a Mac or Linux machine, the command would be:
+Ahora vamos a crear nuestra propia variable de entorno. Ve a tu directorio personal y crea una carpeta llamada `Projects`. Ahora vamos a crear una variable de entorno llamada `PROJDIR` (las variables de entorno suelen ir en mayúsculas) que guarda la ruta a tu directorio de proyectos. Para crear una variable de entorno, puedes utilizar el comando `export`. En una máquina Mac o Linux, el comando sería:
 
 ```
-export PROJDIR=/Users/tim/Projects
+export PROJDIR=/Usuarios/tim/Proyectos
 ```
 
-Notice that the `$` isn't being used in this case. When you define an environment variable, you do not use the `$`. Only use the `$` when you want to reference the value of the variable.
+Observa que en este caso no se utiliza el `$`. Cuando defines una variable de entorno, no utilizas el `$`. Utilice el `$` sólo cuando desee hacer referencia al valor de la variable.
 
-Now that you've created the environment variable, let's use it:
+Ahora que has creado la variable de entorno, vamos a utilizarla:
 
 ```
 cd ~
 cd $PROJDIR
 ```
 
-You should now be in your project directory.
+Ahora debería estar en el directorio de su proyecto.
 
-So now we have a great way of saving a useful variable in our terminal's environment, but we have a problem. Every time you close your terminal window, the environmet variables get reset, so the `PROJDIR` environment variable will be lost! How do we fix that?
+Así que ahora tenemos una gran manera de guardar una variable útil en el entorno de nuestro terminal, pero tenemos un problema. Cada vez que cierras la ventana de tu terminal, las variables de entorno se reinician, por lo que la variable de entorno `PROJDIR` se perderá. ¿Cómo lo solucionamos?
 
-#### Saving environment variables
+#### Guardar variables de entorno
 
-Now that we know how to create environment variables, we need to learn how to save them so that every time we open a new terminal window, we have those environment variables set. To save environment variables, you need to modify the shell configuration file in your home directory. This file is different depending on what your default shell is. If you are using oh-my-zsh, then your configuration file will be called `.zshrc`; if you are using bash, then your configuration file will be called `.bash_profile`.
+Ahora que sabemos cómo crear variables de entorno, necesitamos aprender cómo guardarlas para que cada vez que abramos una nueva ventana de terminal, tengamos esas variables de entorno configuradas. Para guardar variables de entorno, necesitas modificar el archivo de configuración del shell en tu directorio home. Este archivo es diferente dependiendo de cuál sea tu shell por defecto. Si estás usando oh-my-zsh, entonces tu fichero de configuración se llamará `.zshrc`; si estás usando bash, entonces tu fichero de configuración se llamará `.bash_profile`.
 
-Open the configuration file for your shell, either `.zshrc` or `.bash_profile`. Next, add the following line to your file:
-
-```
-export PROJDIR=/Users/$USER/Projects
-```
-
-Save the file, quit out of all terminal windows, and then open terminal again. Try executing `echo $PROJDIR`. You should see the path to your projects directory.
-
-We did one other interesting thing here. Rather than using a hard coded path to the projects directory, we used another environment variable to figure out the correct user name. Try typing `echo $USER` in your terminal. You should see your user name. The important takeaway here is that an environment variable can be defined using other environment variables. For example, if we had a `python` folder inside of the `Projects` directory, we may want a variable for that as well. We could definite it like the following way:
+Abre el archivo de configuración de tu shell, ya sea `.zshrc` o `.bash_profile`. A continuación, añade la siguiente línea a tu archivo:
 
 ```
-export PYTHON_PROJ=/Users/$USER/Projects/python
+export PROJDIR=/Usuarios/$USUARIO/Proyectos
 ```
 
-Or we could use the `PROJDIR` environment variable that we already have set:
+Guarde el archivo, salga de todas las ventanas del terminal y vuelva a abrir el terminal. Intente ejecutar `echo $PROJDIR`. Debería ver la ruta a su directorio de proyectos.
+
+Hicimos otra cosa interesante aquí. En lugar de utilizar una ruta codificada al directorio de proyectos, utilizamos otra variable de entorno para averiguar el nombre de usuario correcto. Intente escribir `echo $USER` en su terminal. Debería ver su nombre de usuario. Lo importante aquí es que una variable de entorno puede ser definida usando otras variables de entorno. Por ejemplo, si tuviéramos una carpeta `python` dentro del directorio `Projects`, podríamos querer una variable para eso también. Podríamos definirla de la siguiente manera:
+
+```
+export PYTHON_PROJ=/Usuarios/$USUARIO/Proyectos/python
+```
+
+O podemos utilizar la variable de entorno `PROJDIR` que ya tenemos configurada:
 
 ```
 export PYTHON_DIR=$PROJDIR/python
 ```
 
-The only catch is that the line for exporting `PROJDIR` must come before the line using `PROJDIR`. Otherwise, `PROJDIR` will not yet be defined when we use it in the `PYTHON_DIR` definition.
+La única pega es que la línea para exportar `PROJDIR` debe ir antes de la línea que utiliza `PROJDIR`. De lo contrario, `PROJDIR` aún no estará definido cuando lo utilicemos en la definición de `PYTHON_DIR`.
 
-#### The `PATH` environment variable
+#### La variable de entorno `PATH
 
-An important environment variable to know and understand is the `PATH`. Your terminal uses the `PATH` environment variable to find programs to execute. Try the following in a new terminal window:
+Una variable de entorno importante de conocer y entender es el `PATH`. Tu terminal utiliza la variable de entorno `PATH` para encontrar programas para ejecutar. Prueba lo siguiente en una nueva ventana de terminal:
 
 ```
 export PATH=
 ```
 
-Now try using `ls` in the terminal. It doesn't work! Try a few other commands like `man` or `chgrp`. None of them work. That's because commands like `ls` are just programs stored in a file somewhere in your filesystem. The reason we don't normally need to give the full path to the `ls` command when we use it is because `ls` is a file found in one of the folders that are specified on the path.
+Ahora intenta usar `ls` en la terminal. No funciona. Prueba otros comandos como `man` o `chgrp`. Ninguno de ellos funciona. Eso es porque comandos como `ls` son sólo programas almacenados en un fichero en algún lugar de tu sistema de ficheros. La razón por la que normalmente no necesitamos dar la ruta completa al comando `ls` cuando lo usamos es porque `ls` es un fichero que se encuentra en una de las carpetas especificadas en la ruta.
 
-Open a fresh terminal window. The `ls` command should be working again. Now use the `which` command to see where on the path `ls` is coming from:
+Abre una nueva ventana de terminal. El comando `ls` debería funcionar de nuevo. Ahora usa el comando `which` para ver de qué parte de la ruta proviene `ls`:
 
 ```
 which ls
 ```
 
-Typically, the `ls` command is located in the `/bin` directory (though if you're using oh-my-zsh, the command may be aliased to `ls -G`). Let's change our `PATH` environment variable again, but this time, let's assign it to `/bin`:
+Normalmente, el comando `ls` se encuentra en el directorio `/bin` (aunque si estás usando oh-my-zsh, el comando puede tener el alias `ls -G`). Cambiemos nuestra variable de entorno `PATH` de nuevo, pero esta vez, asignémosla a `/bin`:
 
 ```
 export PATH=/bin
 ```
 
-Now try to use the ls command. It should still work! That's because `ls` can now be found in one of the folders of the `PATH`, specifically in `/bin`. Other commands still don't work however. The `man` command still isn't working because it is not found on the `PATH`. Let's add a few more directories to the `PATH` in the same terminal window. We want to add `/usr/bin`, `/usr/sbin`, and `/sbin`, but we don't want to rewrite the `PATH` variable completely. Instead, let's add to the `PATH` that already exists. In order to do that, we reference the `PATH` environment variable using the `$` and separate multiple paths using a colon:
+Ahora intenta utilizar el comando ls. Debería seguir funcionando. Eso es porque `ls` se encuentra ahora en una de las carpetas del `PATH`, concretamente en `/bin`. Sin embargo, otros comandos siguen sin funcionar. El comando `man` sigue sin funcionar porque no se encuentra en el `PATH`. Vamos a añadir algunos directorios más al `PATH` en la misma ventana de terminal. Queremos añadir `/usr/bin`, `/usr/sbin`, y `/sbin`, pero no queremos reescribir la variable `PATH` completamente. En su lugar, vamos a añadir a la `PATH` que ya existe. Para ello, hacemos referencia a la variable de entorno `PATH` utilizando `$` y separamos las rutas múltiples utilizando dos puntos:
 
 ```
 export PATH=$PATH:/usr/bin:/usr/sbin:/sbin
 ```
 
-Now if you do `echo $PATH`, you should see the following output:
+Ahora si haces `echo $PATH`, deberías ver la siguiente salida:
 
 ```
 /bin:/usr/bin:/usr/sbin:/sbin
 ```
 
-And commands like `man` should work. Now that you understand the `PATH`, close the terminal window and open a fresh window, so that your `PATH` will be set up correctly.
+Y comandos como `man` deberían funcionar. Ahora que entiendes el `PATH`, cierra la ventana del terminal y abre una nueva ventana, para que tu `PATH` se configure correctamente.
 
 
 
 ### { Processes. }
 
-#### Objectives
+#### Objetivos
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, usted debe ser capaz de:
 
-* Define what a process is
-* Examine processes that are running on your machine
-* Kill a process using the `kill` command
+* Definir qué es un proceso
+* Examinar los procesos que se están ejecutando en su máquina
+* Matar un proceso usando el comando `kill
 
-#### What is a process?
+#### ¿Qué es un proceso?
 
-A process is a program on your computer that is being run. For example, when you have Google's chrome browser open, that is a process running on your machine. An email application, a terminal window, and even the `ls` command are also processes when they are being executed on your machine.
+Un proceso es un programa que se está ejecutando en tu ordenador. Por ejemplo, cuando tienes abierto el navegador Chrome de Google, eso es un proceso ejecutándose en tu máquina. Una aplicación de correo electrónico, una ventana de terminal e incluso el comando `ls` también son procesos cuando se están ejecutando en tu máquina.
 
-The nice thing about processes is that the operating system ensures that all of the memory for one process cannot be accessed by another process. In other words, if one process crashes, it should not have any effect on the rest of the system.
+Lo bueno de los procesos es que el sistema operativo se asegura de que otro proceso no pueda acceder a toda la memoria de un proceso. En otras palabras, si un proceso falla, no debería tener ningún efecto en el resto del sistema.
 
-But how can you tell which processes are running at any given time? And how can you stop a process from the terminal?
+Pero, ¿cómo saber qué procesos se están ejecutando en un momento dado? ¿Y cómo se puede detener un proceso desde el terminal?
 
 #### `ps`
 
-The `ps` command is a useful tool for seeing which processes are running on your machine. You can execute the command `ps` on its own, but more commonly you'll see the command `ps aux` being used. The `a` indicates that you're interested in all processes, not just process for your current user; `u` ensures that the process owner will be displayed; finally, specifying `x` makes sure that you'll see a list of all active processes, not just those attached to a terminal.
+El comando `ps` es una herramienta útil para ver qué procesos se están ejecutando en tu máquina. Puedes ejecutar el comando `ps` por sí solo, pero lo más habitual es que utilices el comando `ps aux`. La `a` indica que estás interesado en todos los procesos, no sólo en los procesos de tu usuario actual; `u` asegura que se mostrará el propietario del proceso; finalmente, especificando `x` te aseguras de que verás una lista de todos los procesos activos, no sólo de aquellos adjuntos a un terminal.
 
-(Note: you may be wondering why the command is `ps aux`, and not `ps -aux`. For some history on the command, check out [this](https://stackoverflow.com/questions/15102576/ps-aux-works-but-ps-aux-doesnt) Stack Overflow question.)
+(Nota: puede que se pregunte por qué el comando es `ps aux`, y no `ps -aux`. Para algo de historia sobre el comando, echa un vistazo a [esta](https://stackoverflow.com/questions/15102576/ps-aux-works-but-ps-aux-doesnt) pregunta de Stack Overflow).
 
-Try typing `ps aux` in your terminal and see what you get. You should see something similar to this:
+Intenta escribir `ps aux` en tu terminal y mira lo que obtienes. Deberías ver algo similar a esto:
 
 ```
-USER   PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
-tim  74874   8.3  1.7  3408348 139912   ??  S     3:34PM   6:39.74 /Applications/Google Chrome.app/Contents/Versions/53.0.2785.116/Google Chrome Helper.app/Contents
-tim  74858   6.2  2.8  3224740 233060   ??  S     3:34PM   8:34.62 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-tim  61431   2.5  0.6  2698840  53728   ??  R     9:46AM   0:59.49 /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+USER PID %CPU %MEM VSZ RSS TT STAT STARTED TIME COMMAND
+tim 74874 8.3 1.7 3408348 139912 ??  S 3:34PM 6:39.74 /Applications/Google Chrome.app/Contents/Versions/53.0.2785.116/Google Chrome Helper.app/Contents
+tim 74858 6.2 2.8 3224740 233060 ??  S 3:34PM 8:34.62 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+tim 61431 2.5 0.6 2698840 53728 ??  R 9:46AM 0:59.49 /Aplicaciones/Utilidades/Terminal.app/Contenidos/MacOS/Terminal
 ```
 
-Some important columns are `USER`, `PID`, and `COMMAND`. The USER column is the username of the user who executed the process. The PID column is a number that uniquely identifies the process. This PID will be useful very soon when we learn how to stop a process.
+Algunas columnas importantes son `USER`, `PID`, y `COMMAND`. La columna USUARIO es el nombre de usuario del usuario que ejecutó el proceso. La columna PID es un número que identifica unívocamente al proceso. Este PID será útil muy pronto cuando aprendamos cómo detener un proceso.
 
 #### `kill`
 
-At times you may have a process that for whatever reason is not responsive. In other words, the process continues to execute when you do not want it to. We can stop the process from running by using the `kill` command.
+A veces puedes tener un proceso que por cualquier razón no responde. En otras palabras, el proceso continúa ejecutándose cuando no queremos que lo haga. Podemos detener la ejecución del proceso utilizando el comando `kill`.
 
-Let's try it out. First, open any file in terminal using the `less` command. The process will continue to run as long as you have not pressed `q` to quit. In a separate terminal window, type the following:
+Vamos a probarlo. Primero, abre cualquier archivo en la terminal usando el comando `less`. El proceso continuará ejecutándose mientras no hayas pulsado `q` para salir. En otra ventana de terminal, escribe lo siguiente:
 
 ```
 ps aux
 ```
 
-Now scroll through the list until you find a process that is running that has been started by your username and whose command's path ends with less. Once you've identified the process, take note of the PID.
+Ahora desplázate por la lista hasta que encuentres un proceso en ejecución que haya sido iniciado por tu nombre de usuario y cuya ruta de comandos termine en less. Una vez que hayas identificado el proceso, toma nota del PID.
 
-Next, to kill the process, type `kill` and then the PID and hit enter. For example, if your process looks like the following:
+A continuación, para matar el proceso, escribe `kill` y luego el PID y pulsa intro. Por ejemplo, si tu proceso tiene el siguiente aspecto:
 
 ```
-tim             10011   0.0  0.0  2434948    900 s000  S+    5:32PM   0:00.00 less readme.md
+tim 10011 0.0 0.0 2434948 900 s000 S+ 5:32PM 0:00.00 less readme.md
 ```
 
-Then your PID is `10011`. So to kill less, your command would be the following:
+Entonces tu PID es `10011`. Así que para matar a less, su comando sería el siguiente:
 
 ```
 kill 10011
 ```
 
-After killing the process, you should see your terminal window that was running less go back to a normal terminal prompt.
+Después de matar el proceso, debería ver que la ventana de terminal que se estaba ejecutando menos vuelve a un prompt de terminal normal.
 
 #### `kill` vs. `kill -9`
 
-Sometimes when you're reading tutorials and a process needs to be killed, you'll see that the command `kill -9` is executed, not `kill`. So what's the difference between these two?
+A veces, cuando estás leyendo tutoriales y necesitas matar un proceso, verás que se ejecuta el comando `kill -9`, no `kill`. ¿Cuál es la diferencia entre ambos?
 
-Whenever you try to kill a process, a signal is sent to that process telling it to terminate. By default that signal is the `TERM` signal. However, if a program has crashed or is frozen for some reason, it's possible that it won't pick up on that signal and the process may not terminate. The -9 flag sends a different signal to the process: according to the manual for `kill`, -9 represents the `KILL` signal, which is a "non-catchable, non-ignorable kill." If killing a process doesn't work, try killing with -9 and see if that gets the job done.
+Cada vez que intentas matar un proceso, se envía una señal a ese proceso diciéndole que termine. Por defecto esa señal es la señal `TERM`. Sin embargo, si un programa se ha bloqueado o está congelado por alguna razón, es posible que no capte esa señal y el proceso no termine. La bandera -9 envía una señal diferente al proceso: según el manual de `kill`, -9 representa la señal `KILL`, que es un "kill no capturable, no ignorable". Si matar un proceso no funciona, intente matarlo con -9 y vea si eso hace el trabajo.
 
-For more on `kill` and the different signals you can send, check out [this](https://superuser.com/questions/107543/bash-man-page-kill-pid-vs-kill-9-pid) superuser question.
+Para más información sobre `kill` y las diferentes señales que puede enviar, consulte [esta](https://superuser.com/questions/107543/bash-man-page-kill-pid-vs-kill-9-pid) pregunta de superusuario.
 
 
 
-### { Finding Files and Folders. }
+### { Encontrando Archivos y Carpetas. }
 
-#### Objectives
+#### Objetivos
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, usted debe ser capaz de:
 
-* compare and contrast `find` and `grep`
-* use `find` to search for files and folders
-* use `grep` to search for patterns in a string or text
-* define what a _regular expression_ is
+* comparar y contrastar `find` y `grep
+* usar `find` para buscar ficheros y carpetas
+* usar `grep` para buscar patrones en una cadena o texto
+* definir qué es una _expresión regular
 
-#### `find`
+#### `encontrar
 
-One of the most useful terminal commands is the `find` command. When you know how to use it well, you can easily find files on your computer without using Spotlight, Alfred or any other GUI. Let's get started by learning how the syntax works.
+Uno de los comandos de terminal más útiles es el comando `find`. Cuando sabes usarlo bien, puedes encontrar fácilmente archivos en tu ordenador sin usar Spotlight, Alfred o cualquier otra GUI. Empecemos aprendiendo cómo funciona la sintaxis.
 
-To find a specific file in your current directory, you can simply type `find` and the name of the file. (If you try to find a folder you will find all of the contents inside as well.) For example, if try typing the following command from your home directory:
+Para encontrar un archivo específico en tu directorio actual, simplemente escribe `find` y el nombre del archivo. (Si intentas encontrar una carpeta, también encontrarás todo el contenido de su interior). Por ejemplo, si intentas escribir el siguiente comando desde tu directorio personal:
 
 ```
-find Downloads
+find Descargas
 ```
 
-You should see a list of all your Downloads in the terminal.
+Debería ver una lista de todas sus descargas en el terminal.
 
-To find something with a bit more complexity, use the following pattern
+Para encontrar algo con un poco más de complejidad, utilice el siguiente patrón
 
-1. `find`
-2. a filepath
-3. an expression (this is where you have the most flexibility)
+1. `encontrar
+2. una ruta de archivo
+3. una expresión (aquí es donde tienes más flexibilidad)
 
-Let's `cd` into a folder called `views` and try this pattern to find anything with the name `first.txt` inside of the `views` folder:
+Vamos a `cd` en una carpeta llamada `views` y probar este patrón para encontrar cualquier cosa con el nombre `first.txt` dentro de la carpeta `views`:
 
-`find . -name "first.txt"`
+`encontrar . -name "primer.txt"`
 
-Now this is nice if we know exactly the name of the file we are looking for, but many times we need to use wildcard characters including `*`, `?` and `[]`. The difference between these characters is as follows:
+Esto está bien si sabemos exactamente el nombre del fichero que buscamos, pero muchas veces necesitamos usar caracteres comodín como `*`, `?` y `[]`. La diferencia entre estos caracteres es la siguiente:
 
-`*` - any number of characters\
-`?` - one character\
-`[]` - any of the characters inside the brackets
+`*` - cualquier número de caracteres
+`?` - un carácter
+`[]` - cualquiera de los caracteres dentro de los corchetes
 
-Here are some more examples:
+He aquí algunos ejemplos más:
 
-* find inside of the `views` folder (assume we are inside the views folder) anything that ends with `.html` => `find . -name "*.html"`
-* find inside of the `views` folder (assume we are inside the views folder) anything that ends with a three letter file extension like `.txt` or `.css` => `find . -name "*.???"`
-* find inside of the `views` folder (assume we are inside the views folder) anything that starts with the letter `f` `t` or `s` => `find . -name "[fts]*"`
-* find inside of the `views` folder anything that has the text `main` somewhere in the filename (this could be the beginning as well) `find . -name "*main*"`
+* encontrar dentro de la carpeta `views` (supongamos que estamos dentro de la carpeta views) cualquier cosa que termine en `.html` => `find . -name "*.html"`
+* buscar dentro de la carpeta `views` (supongamos que estamos dentro de la carpeta views) cualquier cosa que termine con una extensión de tres letras como `.txt` o `.css` => `find . -name "*.???"`
+* buscar dentro de la carpeta `views` (supongamos que estamos dentro de la carpeta views) cualquier cosa que empiece por la letra `f` `t` o `s` => `find . -name "[fts]*"`
+* encontrar dentro de la carpeta `views` cualquier cosa que tenga el texto `main` en algún lugar del nombre del archivo (esto podría ser el principio también) `find . -name "*main*"`
 
 #### `grep`
 
-Another extremely useful tool for finding information that we've seen before is `grep`. While `find` is for files and folders, `grep` is excellent for searching for specific values in a string or in a text file. If you type `grep` on its own, it's not that valuable because you need to make sure you pass a filename and text to it. You can also use `grep` with piping and `cat`.
+Otra herramienta extremadamente útil para encontrar información que ya hemos visto antes es `grep`. Mientras que `find` es para archivos y carpetas, `grep` es excelente para buscar valores específicos en una cadena o en un archivo de texto. Si escribes `grep` por sí solo, no es tan valioso porque necesitas asegurarte de pasarle un nombre de fichero y un texto. También puedes usar `grep` con piping y `cat`.
 
-We have already seen examples using `grep` with `cat` to find words like `cat people.txt | grep Elie` to find if the word Elie exists in the `people.txt` file. Let's use the file below which we will call `names.txt` as an example:
+Ya hemos visto ejemplos usando `grep` con `cat` para encontrar palabras como `cat gente.txt | grep Elie` para encontrar si la palabra Elie existe en el fichero `gente.txt`. Utilicemos como ejemplo el siguiente fichero al que llamaremos `names.txt`:
 
 ```
 Lisa
@@ -1239,26 +1240,26 @@ Jane
 Shana
 ```
 
-Let's add a little more onto our knowledge of `grep` and introduce some flags.
+Aumentemos un poco más nuestros conocimientos sobre `grep` e introduzcamos algunas banderas.
 
-* `-i` for case insensitive search
+* `-i` para buscar sin distinguir mayúsculas de minúsculas
 
-`grep -i "elie" names.txt` => `Elie`
+`grep -i "elie" nombres.txt` => `Elie`
 
-* `-w` for full word search
+* `-w` para buscar palabras completas
 
-`grep -i "beth" names.txt`
+`grep -i "beth" nombres.txt` => `grep -i "beth" nombres.txt`
 
 ```
 Beth
 Elizabeth
 ```
 
-`grep -iw "beth" names.txt` => `Beth`
+`grep -iw "beth" nombres.txt` => `Beth`
 
-* `-A` display a certain number of lines after
+* `-A` mostrar un cierto número de líneas después de
 
-`grep -A 3 "Beth" names.txt`
+`grep -A 3 "Beth" nombres.txt`
 
 ```
 Beth
@@ -1267,9 +1268,9 @@ Elizabeth
 Tom
 ```
 
-* `-B` display a certain number of lines lines before
+* `-B` mostrar un cierto número de líneas líneas antes de
 
-`grep -B 3 "Beth" names.txt`
+`grep -B 3 "Beth" nombres.txt`
 
 ```
 Lisa
@@ -1278,9 +1279,9 @@ Elie
 Beth
 ```
 
-* `-C` display a certain number of lines lines around
+* `-C` mostrar un cierto número de líneas alrededor de
 
-`grep -C 3 "Beth" names.txt`
+`grep -C 3 "Beth" nombres.txt`
 
 ```
 Lisa
@@ -1292,9 +1293,9 @@ Elizabeth
 Tom
 ```
 
-* `-v` invert pattern (you can think of this as anything NOT what you are searching for)
+* Patrón de inversión `-v` (puede pensar en esto como cualquier cosa que NO sea lo que está buscando)
 
-`grep -v "Jane" names.txt`
+`grep -v "Jane" nombres.txt`
 
 ```
 Lisa
@@ -1309,161 +1310,161 @@ Liza
 Shana
 ```
 
-* `-c` count matches
+* `-c` cuenta partidos
 
-`grep -c "Jane" names.txt` => `2`
+`grep -c "Jane" nombres.txt` => `2`
 
-* `-n` show line number
+* `-n` muestra el número de línea
 
-`grep -ni "Jane" names.txt`
+`grep -ni "Jane" nombres.txt`
 
 ```
 10:Janey
 11:Jane
 ```
 
-There are **many** more flags with `grep`; you can google around for more or look at `man grep`.
+Hay **muchas** más opciones con `grep`; puedes buscar más en google o en `man grep`.
 
-#### Wildcards with `grep`
+#### Comodines con `grep
 
-We previously saw wildcards with `find`, so how can we use them with `grep`? The key is to use _regular expressions_. Regular expressions are used to define patterns in a string of characters, which are then used to search a text for potential matches. Regular expressions are common and quite powerful: you can use them to check whether a user has submitted a properly formatted email address or phone number, for instance.
+Anteriormente vimos comodines con `find`, así que ¿cómo podemos usarlos con `grep`? La clave es usar _expresiones regulares_. Las expresiones regulares se utilizan para definir patrones en una cadena de caracteres, que luego se usan para buscar posibles coincidencias en un texto. Las expresiones regulares son comunes y bastante potentes: puede utilizarlas para comprobar si un usuario ha enviado una dirección de correo electrónico o un número de teléfono con el formato adecuado, por ejemplo.
 
-We will not go in depth with regular expressions here. There are a number of great [interactive references](https://regexr.com/) online. For now, but let's just take a look at a couple examples of the syntax:
+No profundizaremos aquí en las expresiones regulares. Hay un gran número de [referencias interactivas](https://regexr.com/) en línea. Por ahora, veamos un par de ejemplos de la sintaxis:
 
-`.` - matches any character
+`.` - coincide con cualquier carácter
 
-**Example:** How many names have a full name that is four characters long?
+**Ejemplo:** ¿Cuántos nombres tienen un nombre completo de cuatro caracteres?
 
-`grep -wc "...." names.txt` => `7`
+`grep -wc "...." nombres.txt` => `7`
 
-`*` - match zero or more of the preceding character or expression.
+`*` - coincide con cero o más del carácter o expresión precedente.
 
-**Example:** How many names start with a capital T?
+**Ejemplo:** ¿Cuántos nombres empiezan por T mayúscula?
 
-`grep -wc "T.*" names.txt` => `2`
+`grep -wc "T.*" nombres.txt` => `2
 
-`[]` - any specific characters
+`[]` - cualquier carácter específico
 
-**Example:** How many names start with a capital L, M, or E?
+**Ejemplo:** ¿Cuántos nombres empiezan por L, M o E mayúscula?
 
-`grep -wc "[LME].*" names.txt` => `6`
+`grep -wc "[LME].*" nombres.txt` => `6`
 
-`[^]` - do not match
+`[^]` - no coincide
 
-**Example** How many names **do not** start with a capital T?
+**Ejemplo** ¿Cuántos nombres **no** empiezan por T mayúscula?
 
-`grep -wc "[^T].*" names.txt` => `10`
-
-
-
-## { Advanced Terminal - 1 Exercises. }
-
-#### Part I
-
-Answer the following questions:
-
-1. Create an environment variable called `FIRST_NAME` and set it equal to your first name (this does not need to be permanent)
-2. Print the `FIRST_NAME` variable
-3. Print out the `$PATH` variable
-4. What is the `$PATH` variable?
-5. Why would you want to create an environment variable?
-6. How do you permanently save environment variables?
-7. What is a process?
-8. How do you list all processes running on your machine?
-9. What is a PID?
-10. How do you terminate a process?
-11. What is the difference between `kill` and `kill -9`?
-12. What `grep` flag allows for case insensitive search?
-13. What `grep` flag allows for a certain number of lines before the match?
-14. What `grep` flag allows for a certain number of lines around the match?
-15. What `grep` flag allows for a certain number of lines after the match?
-16. What `grep` flag allows for full word search?
-17. What `grep` flag shows you the line number of a match?
-
-#### Part II
-
-Write the following terminal commands to do the following (assume that `instructors.txt` is an imaginary file):
-
-1. Find all files inside the `Desktop` folder that have a name of "learn."
-2. Find all files inside the `Desktop` folder that start with a "P."
-3. Find all files inside the `Desktop` folder that end with `.txt`.
-4. Find all files inside the `Desktop/views` folder that have the name `data` somewhere in their filename.
-5. Inside of the `instructors.txt` file, output the number of times the word "Elie" appears.
-6. Inside of the `instructors.txt` file, list all matches for any full word that starts with a capital "P."
-7. Inside of the `instructors.txt` file, list all the line numbers for any full word that starts with a "z" (it should match regardless of upper or lower case).
+`grep -wc "[^T].*" nombres.txt` => `10
 
 
 
-## Advanced Level - 2  { OPTIONAL }
+## { Terminal Avanzado - 1 Ejercicios. }
+
+#### Parte I
+
+Responda a las siguientes preguntas:
+
+1. Crea una variable de entorno llamada `FIRST_NAME` y establécela igual a tu nombre de pila (no es necesario que sea permanente).
+2. Imprime la variable "PRIMER_NOMBRE
+3. Imprime la variable `$PATH
+4. ¿Qué es la variable `$PATH`?
+5. ¿Por qué querrías crear una variable de entorno?
+6. ¿Cómo se guardan permanentemente las variables de entorno?
+7. 7. ¿Qué es un proceso?
+8. ¿Cómo se listan todos los procesos que se están ejecutando en la máquina?
+9. 9. ¿Qué es un PID?
+10. 10. ¿Cómo se termina un proceso?
+11. ¿Cuál es la diferencia entre `kill` y `kill -9`?
+12. ¿Qué opción de `grep` permite buscar sin distinguir mayúsculas de minúsculas?
+13. ¿Qué opción de `grep` permite un cierto número de líneas antes de la coincidencia?
+14. ¿Qué bandera `grep` permite un cierto número de líneas alrededor de la coincidencia?
+15. ¿Qué bandera `grep` permite un cierto número de líneas después de la coincidencia?
+16. ¿Qué bandera `grep` permite la búsqueda completa de palabras?
+17. ¿Qué opción de `grep` muestra el número de línea de una coincidencia?
+
+#### Parte II
+
+Escribe los siguientes comandos de terminal para hacer lo siguiente (asume que `instructores.txt` es un fichero imaginario):
+
+1. Encuentra todos los archivos dentro de la carpeta `Desktop` que tengan el nombre "learn".
+2. Encuentra todos los archivos dentro de la carpeta `Desktop` que empiecen por "P".
+3. 3. Encuentre todos los archivos dentro de la carpeta `Desktop` que terminen con `.txt`.
+4. Encuentra todos los archivos dentro de la carpeta `Desktop/views` que tengan el nombre `data` en algún lugar de su nombre de archivo.
+5. Dentro del archivo `instructors.txt`, obtenga el número de veces que aparece la palabra "Elie".
+6. Dentro del fichero `instructors.txt`, listar todas las coincidencias de cualquier palabra completa que empiece por "P" mayúscula.
+7. Dentro del archivo `instructors.txt`, liste todos los números de línea de cualquier palabra completa que empiece por "z" (debe coincidir independientemente de si es mayúscula o minúscula).
+
+
+
+## Nivel Avanzado - 2 { OPTIONAL }
 
 
 
 ### { SSH. }
 
-#### Objectives
+#### Objetivos
 
-By the end of this chapter, you should be able to:
+Al final de este capítulo, deberías ser capaz de:
 
-* set up an EC2 instance on Amazon
-* use the `ssh` command to connect securely to a remote server
-* use the `scp` command to copy files to a remote server
+* configurar una instancia EC2 en Amazon
+* utilizar el comando `ssh` para conectarte de forma segura a un servidor remoto
+* usar el comando `scp` para copiar archivos a un servidor remoto
 
 #### SSH
 
-SSH, or **S**ecure **Sh**ell, provides a secure channel to access other computers. We commonly use SSH to remotely log in and connect securely to other servers. To practice with SSH we will be setting up our own remote servers using Amazon EC2. This setup can be a bit intimidating, but it's a very valuable skill to know with any kind of development. Let's get started!
+SSH, o **S**ecure **Sh**ell, proporciona un canal seguro para acceder a otros ordenadores. Comúnmente utilizamos SSH para iniciar sesión de forma remota y conectarnos de forma segura a otros servidores. Para practicar con SSH vamos a configurar nuestros propios servidores remotos utilizando Amazon EC2. Esta configuración puede ser un poco intimidante, pero es una habilidad muy valiosa para saber con cualquier tipo de desarrollo. ¡Vamos a empezar!
 
-#### Setting up an EC2 Instance
+#### Configurando una Instancia EC2
 
-As evidenced by the list below, there are a fair number of steps involved in setting up your instance. The links provided also provide a fair amount of context, and help explain the purpose of each of the following steps.
+Como se muestra en la siguiente lista, hay un buen número de pasos para configurar tu instancia. Los enlaces proporcionados también proporcionan una buena cantidad de contexto y ayudan a explicar el propósito de cada uno de los siguientes pasos.
 
-1. Make sure that you have an Amazon Web Services (AWS) account. You can log in / sign up [here](https://docs.aws.amazon.com/) and click on the top right.
-2. Create an IAM user [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-an-iam-user).
-3. Create a key pair [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair)
-4. Create a VPC [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-vpc)
-5. Create a Security Group [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-base-security-group)
-6. Launch your instance [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2\_GetStarted.html#ec2-launch-instance\_linux)
-7. Connect to your instance [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2\_GetStarted.html#ec2-connect-to-instance-linux).
+1. Asegúrese de que dispone de una cuenta de Amazon Web Services (AWS). Puede iniciar sesión / registrarse [aquí](https://docs.aws.amazon.com/) y haga clic en la parte superior derecha.
+2. Crea un usuario IAM [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-an-iam-user).
+3. Crea un par de claves [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-key-pair)
+4. Crear una VPC [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-vpc)
+5. Crear un grupo de seguridad [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-a-base-security-group)
+6. Lance su instancia [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2\_GetStarted.html#ec2-launch-instance\_linux)
+7. 7. Conéctese a su instancia [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-connect-to-instance-linux).
 
-To connect to your instance using SSH you can start [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html).
+Para conectarse a su instancia mediante SSH puede iniciar [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html).
 
-Before you try to SSH make sure that your instance is running and that the checks have passed. This should involve typing something along the lines of `ssh -i ./me-key-pair-uswest2.pem ec2-user@YOUR_PUBLIC_DNS`
+Antes de intentar utilizar SSH, asegúrese de que su instancia se está ejecutando y de que se han superado las comprobaciones. Para ello, escriba algo parecido a `ssh -i ./me-key-pair-uswest2.pem ec2-user@YOUR_PUBLIC_DNS`.
 
-Once you've connected via SSH, you can exit out of the shell by typing `exit`.
+Una vez que se haya conectado a través de SSH, puede salir del intérprete de comandos escribiendo `exit`.
 
-#### Securely copying files to the EC2 Instance with scp
+#### Copia segura de archivos a la Instancia EC2 con scp
 
-To move files to your EC2 instance, we use the `scp` command to securely copy information. We will need our `pem` file that we used before so make sure you know where that is located. The pattern for `scp` looks like this:
+Para mover archivos a tu instancia EC2, usamos el comando `scp` para copiar información de forma segura. Necesitaremos nuestro archivo `pem` que usamos antes, así que asegúrate de saber dónde se encuentra. El patrón para `scp` es el siguiente:
 
-`scp -i PATH_TO_YOUR_PEM_FILE FILE_TO_MOVE USERNAME@PUBLIC_DNS`
+`scp -i PATH_TO_YOUR_PEM_FILE FILE_TO_MOVE USERNAME@PUBLIC_DNS`.
 
-This command would move the file `move.txt` from my current directory to the `home` directory on my EC2 instance.
+Este comando movería el archivo `move.txt` de mi directorio actual al directorio `home` de mi instancia EC2.
 
-`scp -i ./me-key-pair-uswest2.pem move.txt ec2-user@ec2-54-213-7-226.us-west-2.compute.amazonaws.com:/`
+`scp -i ./me-key-pair-uswest2.pem mover.txt ec2-user@ec2-54-213-7-226.us-west-2.compute.amazonaws.com:/`
 
-#### Terminate your instance
+#### Finalice su instancia
 
-When you are done working on this tutorial - you **MUST** terminate your instance so that it is not still running. This ensures that you will not be charged for anything as well. You can read more about it [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2\_GetStarted.html#ec2-clean-up-your-instance)
-
-
+Cuando termine de trabajar en este tutorial, **DEBE** finalizar su instancia para que no siga en ejecución. Esto asegura que no se le cobrará nada. Puede leer más sobre esto [aquí](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2\_GetStarted.html#ec2-clean-up-your-instance)
 
 
 
-### { Cut, Sed, Awk, and Xargs. }
 
-#### Objectives
 
-By the end of this chapter, you should be able to:
+### { Cut, Sed, Awk, y Xargs. }
 
-* Understand what the `cut` command does and list some use cases for it
-* Understand what the `sed` command does and list some use cases for it
-* Understand what the `awk` command does and list some use cases for it
-* Understand what the `xargs` command does and list some use cases for it
+#### Objetivos
+
+Al final de este capítulo, deberías ser capaz de:
+
+* Entender qué hace el comando `cut` y enumerar algunos casos de uso.
+* Entender lo que hace el comando `sed` y enumerar algunos casos de uso para el mismo.
+* Entender qué hace el comando `awk` y enumerar algunos casos de uso.
+* Entender qué hace el comando `xargs` y enumerar algunos casos de uso.
 
 #### cut
 
-The `cut` command is very useful for separating or delimiting strings and characters. If you need to split apart text files or find certain characters, `cut` is the way to go. Let's see how it works with a few examples in a file called `languages.txt`:
+El comando `cut` es muy útil para separar o delimitar cadenas y caracteres. Si necesitas separar archivos de texto o encontrar ciertos caracteres, `cut` es el camino a seguir. Veamos cómo funciona con algunos ejemplos en un archivo llamado `languages.txt`:
 
-`languages.txt`
+`idiomas.txt`
 
 ```
 Java,James
@@ -1473,21 +1474,21 @@ Bash,Brian
 Self,David
 ```
 
-Here's an example using `cut` to grab the first 4 characters of each line (the `-c` flag indicates that the numerical range coming after the flag is referencing characters, not bytes):
+He aquí un ejemplo usando `cut` para tomar los 4 primeros caracteres de cada línea (la bandera `-c` indica que el rango numérico que viene después de la bandera se refiere a caracteres, no a bytes):
 
-`cut -c 1-4 languages.txt`
+`cut -c 1-4 idiomas.txt`
 
 ```
 Java
 Ruby
 Lisp
 Bash
-Self
+Auto
 ```
 
-Now let's grab the last names, but not by the number of characters. Instead, let's do this by delimiting (splitting) on the comma
+Ahora vamos a coger los apellidos, pero no por el número de caracteres. En su lugar, vamos a hacerlo delimitando (dividiendo) en la coma
 
-`cut -d, -f2 languages.txt`
+`cut -d, -f2 idiomas.txt`
 
 ```
 James
@@ -1497,176 +1498,176 @@ Brian
 David
 ```
 
-So what is the `-f2`? `-f` refers to each portion that has been split by the delimeter (`-d`) flag. So if we just want the names we can do
+¿Qué es `-f2`? `-f` se refiere a cada porción que ha sido dividida por la bandera delimeter (`-d`). Así que si sólo queremos los nombres podemos hacer
 
-`cut -d, -f1 languages.txt`
+cut -d, -f1 idiomas.txt
 
 ```
 Java
 Ruby
 Lisp
 Bash
-Self
+Auto
 ```
 
-This is much better because if we had languages of different character lengths, `cut -c 1-4 languages.txt` would not work!
+Esto es mucho mejor porque si tuviéramos idiomas con longitudes de caracteres diferentes, `cut -c 1-4 idiomas.txt` ¡no funcionaría!
 
-Next, try to use `cut` to print out just the authors. Then sort them and then return the first two authors!
+A continuación, intente utilizar `cut` para imprimir sólo los autores. Luego ordénalos y devuelve los dos primeros autores.
 
-Here's one solution:
+He aquí una solución:
 
-`cut -d, -f2 languages.txt | sort | head -n 2`
+`cut -d, -f2 idiomas.txt | ordenar | head -n 2`
 
 #### sed
 
-Sed, or Stream EDitor, is one of the _much_ more complex terminal commands, so we will only be going over some simple uses cases. There are many, many things you can do with `sed` so try to follow these examples and push yourself to keep learning!
+Sed, o Stream EDitor, es uno de los comandos de terminal _mucho_ más complejos, así que sólo repasaremos algunos casos de uso sencillos. Hay muchas, muchas cosas que puedes hacer con `sed` así que intenta seguir estos ejemplos y ¡anímate a seguir aprendiendo!
 
-Sed is commonly used for finding and replacing text, editing text in a file, and printing certain parts of a file (though it can to much more). Let's start by finding and replacing each comma in the `languages.txt` file with a colon.
+Sed se usa comúnmente para encontrar y reemplazar texto, editar texto en un archivo, e imprimir ciertas partes de un archivo (aunque puede hacer mucho más). Empecemos por encontrar y reemplazar cada coma en el archivo `languages.txt` por dos puntos.
 
-Here's the command:
+Este es el comando:
 
 `sed 's/,/:/g' languages.txt`
 
-Let's break this down:
+Vamos a desglosar esto:
 
-`sed` - the command\
-`s` - substitute\
-`,` - our old value, a comma\
-`:` - our new value\
-`g` - globally, do this everywhere not just the first match\
-`languages.txt` - the file we are working with
+`sed` - el comando
+`s` - sustituto
+`,` - nuestro antiguo valor, una coma\_
+`:` - nuestro nuevo valor
+`g` - globalmente, hacer esto en todas partes no sólo el primer partido\
+`languages.txt` - el archivo con el que estamos trabajando
 
-Here's what the command should output:
+Esto es lo que el comando debería mostrar:
 
 ```
 Java:James
 Ruby:Matz
-Lisp:John
+Lisp:Juan
 Bash:Brian
-Self:David
+Yo:David
 ```
 
-Notice that if you `cat languages.txt` after running the above `sed` command, the original file is unchanged. In order to edit the file, we need to use the `i` flag to edit in place. But if you try running the command with the `-i` flag you'll get an error about extra characters. Since we are also specifying additional arguments, we need to use the `-e` flag as well.
+Observa que si `cat languages.txt` después de ejecutar el comando `sed` anterior, el archivo original no se modifica. Para editar el archivo, necesitamos usar la bandera `i` para editar en su lugar. Pero si intentas ejecutar el comando con la bandera `-i` obtendrás un error sobre caracteres extra. Puesto que también estamos especificando argumentos adicionales, necesitamos utilizar la bandera `-e` también.
 
-`sed -ie 's/,/:/g' languages.txt`
+sed -ie 's/,/:/g' idiomas.txt
 
-If you run this command, and then `cat languages.txt`, you should see that everything has been replaced!
+Si ejecutas este comando y luego `cat languages.txt`, ¡verás que todo ha sido reemplazado!
 
-We are just scratching the surface with `sed`. If you want to learn more about it you can read [this](https://www.tutorialspoint.com/sed/sed\_basic\_syntax.htm) and [this](http://www.panix.com/\~elflord/unix/sed.html)
+Sólo estamos arañando la superficie con `sed`. Si quieres aprender más sobre él puedes leer [esto](https://www.tutorialspoint.com/sed/sed\_basic_syntax.htm) y [esto](http://www.panix.com/\~elflord/unix/sed.html)
 
 #### awk
 
-Similar to `sed`, `awk` is an incredibly powerful text processing tool. In fact, AWK itself is actually a language that can pretty much do any kind of text manipulation you can think of. We will briefly cover `awk` and go over a few useful commands you can use with it.
+Similar a `sed`, `awk` es una herramienta de procesamiento de texto increíblemente potente. De hecho, AWK es en sí mismo un lenguaje que puede hacer prácticamente cualquier tipo de manipulación de texto que se te ocurra. Cubriremos brevemente `awk` y repasaremos algunos comandos útiles que puedes usar con él.
 
-Let's start with the simple command `awk '{print}' languages.txt`. This will simply print out the `languages.txt` file. But what happens if we want to just print out a certain part of the file? We can also use `awk` as a delimiter using the `-F` flag. Let's set `:` to be our delimiter and just print out the first portion delimited using `$1`
+Comencemos con el simple comando `awk '{print}' languages.txt`. Esto simplemente imprimirá el archivo `languages.txt`. ¿Pero qué pasa si sólo queremos imprimir una parte determinada del fichero? También podemos utilizar `awk` como delimitador utilizando la bandera `-F`. Pongamos `:` como delimitador e imprimamos sólo la primera parte delimitada con `$1`.
 
 `awk -F ':' '{print $1}' languages.txt`
 
-Let's look at another example, using the `history` command. If you type this into the terminal, you should see a list of your recent commands. Let's use `awk` to get a history of just the names of the commands we've used, with no further details. When using `awk`, if the delimiter is an empty space we do not need the `-F` flag. So if we want to find the commands we recently used we can type `history | awk '{print $2}'`.
+Veamos otro ejemplo, utilizando el comando `history`. Si escribes esto en el terminal, deberías ver una lista de tus comandos recientes. Usemos `awk` para obtener un historial de sólo los nombres de los comandos que hemos usado, sin más detalles. Cuando usamos `awk`, si el delimitador es un espacio vacío no necesitamos la bandera `-F`. Así que si queremos encontrar los comandos que hemos usado recientemente podemos escribir `history | awk '{print $2}'`.
 
-We can also use `awk` to print out rows and columns. For example, if you type `df -h` into the terminal you'll see a table withs some information on your hard drive (`df` is short for display free desk space). Let's pass the result of this command into `awk`:
+También podemos usar `awk` para imprimir filas y columnas. Por ejemplo, si escribimos `df -h` en el terminal veremos una tabla con información sobre nuestro disco duro (`df` es la abreviatura de display free desk space). Pasemos el resultado de este comando a `awk`:
 
 ```
-df -h | awk 'FNR == 2 {print $4}'
+df -h | awk 'FNR == 2 {print $4}''
 ```
 
-FNR refers to the record number which is usually a line number. Essentially we're telling `awk` to grab the item in the 2nd row and 4th column of the table, which in this case should be your available disk space.
+FNR se refiere al número de registro, que normalmente es un número de línea. Esencialmente le estamos diciendo a `awk` que coja el elemento de la 2ª fila y 4ª columna de la tabla, que en este caso debería ser tu espacio disponible en disco.
 
-If you want to read more about `awk`, check out [this](https://www.tutorialspoint.com/awk/) tutorial.
+Si quieres leer más sobre `awk`, echa un vistazo a [este](https://www.tutorialspoint.com/awk/) tutorial.
 
 #### xargs
 
-Sometimes you may want to execute the same command for multiple inputs. For instance, maybe you want to search multiple text files for a certain piece of text. This is a case where the `xargs` command can be quite handy. Here are some example use cases for `xargs`; each one runs command for a group of files instead of a single one.
+A veces puedes querer ejecutar el mismo comando para múltiples entradas. Por ejemplo, tal vez quieras buscar un determinado texto en varios archivos de texto. Este es un caso en el que el comando `xargs` puede ser muy útil. Aquí tienes algunos ejemplos de uso de `xargs`; cada uno ejecuta el comando para un grupo de ficheros en lugar de para uno solo.
 
-`find . -name *.html | xargs grep "elie"` - look for the text "elie" inside of every single `html` file in the current folder
+Buscar . -name *.html | xargs grep "elie"` - busca el texto "elie" dentro de cada fichero `html` de la carpeta actual.
 
-`ls | xargs wc -l` - counts the total amount of lines for each file in a folder
+`ls | xargs wc -l` - cuenta la cantidad total de líneas de cada fichero de una carpeta
 
-`find . -name "*" | xargs open` - opens all of the files in the current folder.
+`find . -name "*" | xargs open` - abre todos los ficheros de la carpeta actual.
 
-`find . -name "*.css" | xargs open` - opens all `css` files in the current folder
+Buscar . -name "*.css" | xargs open` - abre todos los archivos `css` de la carpeta actual.
 
-`find . -name "*.html | xargs rm` - removes all files that end with `.html`
+buscar . -name "*.html | xargs rm` - elimina todos los archivos que terminan en `.html`.
 
-`ls | xargs -t -I {} mv {} {}.md` - adds a markdown file extension to all files (the `-I` flag replaces occurrences; the `-t` flag causes the command that gets run for each input to be logged to the terminal before it is executed, which can be helpful for debugging).
+`ls | xargs -t -I {} mv {} {}.md` - añade una extensión de archivo markdown a todos los archivos (la bandera `-I` reemplaza las ocurrencias; la bandera `-t` hace que el comando que se ejecuta para cada entrada se registre en el terminal antes de ser ejecutado, lo que puede ser útil para la depuración).
 
-You can read more about `xargs` [here](http://www.cyberciti.biz/faq/linux-unix-bsd-xargs-construct-argument-lists-utility/)
-
-
+Puedes leer más sobre `xargs` [aquí](http://www.cyberciti.biz/faq/linux-unix-bsd-xargs-construct-argument-lists-utility/)
 
 
 
-### { Shell Scripting and Vim. }
 
-#### Objectives
 
-By the end of this chapter, you should be able to:
+### { Shell Scripting y Vim. }
 
-* write simple shell scripts with arguments
-* use `vi` to open and edit files
+#### Objetivos
+
+Al final de este capítulo, deberías ser capaz de:
+
+* escribir scripts de shell simples con argumentos
+* usar `vi` para abrir y editar archivos
 
 #### Shell Scripting
 
-So far we have learned how to use terminal commands, but our commands are not dynamic. We know exactly what the filenames are or what we might be searching for. Our commands are also not reusable easily; if the filename changes, we have to write the whole command again. To reduce duplication and perform far more sophisticated commands in the terminal, we can write shell scripts using a language called bash. To get started, let's create a file called `first.sh` and inside place the following
+Hasta ahora hemos aprendido a usar comandos de terminal, pero nuestros comandos no son dinámicos. Sabemos exactamente cuáles son los nombres de los archivos o lo que podríamos estar buscando. Nuestros comandos tampoco son fácilmente reutilizables; si el nombre del archivo cambia, tenemos que escribir todo el comando de nuevo. Para reducir la duplicación y ejecutar comandos mucho más sofisticados en el terminal, podemos escribir scripts de shell utilizando un lenguaje llamado bash. Para empezar, creemos un archivo llamado `first.sh` y dentro coloquemos lo siguiente
 
 ```
-echo "Hello World"
+echo "Hola Mundo"
 ```
 
-Now if we try to run `./first.sh` it will tell us `permission denied: ./first.sh`. So we need to make this program executable! Let's change permissions to `755` so that anyone can run this file: `chmod 755 first.sh`. Now we can run `./first.sh`!
+Ahora si intentamos ejecutar `./first.sh` nos dirá `permission denied: ./first.sh`. Así que tenemos que hacer que este programa sea ejecutable. Cambiemos los permisos a `755` para que cualquiera pueda ejecutar este archivo: `chmod 755 primer.sh`. ¡Ahora podemos ejecutar `./first.sh`!
 
-Let's make a second script called `second.sh`. Inside of this file, type the following:
+Hagamos un segundo script llamado `second.sh`. Dentro de este archivo, escribe lo siguiente:
 
 ```
-echo Hello $1
+echo Hola $1
 ```
 
-What do you think that `$1` represents? Let's first `chmod 755 second.sh` and then run `./second.sh` - we should just see "Hello". Now let's try `./second.sh World` and we should see "Hello World"! What we just did was pass an argument to our script. Using arguments which start with `$1` and continue upward are how we can make more dynamic scripts.
+¿Qué crees que representa `$1`? Primero `chmod 755 second.sh` y luego ejecuta `./second.sh` - deberíamos ver "Hola". ¡Ahora probemos `./second.sh World` y deberíamos ver "Hello World"! Lo que acabamos de hacer es pasar un argumento a nuestro script. Usando argumentos que comienzan con `$1` y continúan hacia arriba es como podemos hacer scripts más dinámicos.
 
-#### Your turn
+#### Tu turno
 
-Write a script called `sum.sh` which accepts two arguments and echoes the sum of the two numbers. You might need to do some research [here](https://stackoverflow.com/questions/6348902/how-can-i-add-numbers-in-a-bash-script).
+Escribe un script llamado `sum.sh` que acepte dos argumentos y se haga eco de la suma de los dos números. Puede que necesites investigar un poco [aquí](https://stackoverflow.com/questions/6348902/how-can-i-add-numbers-in-a-bash-script).
 
-Here's a solution:
+Aquí tienes una solución:
 
 ```
 echo $(($1+$2))
 ```
 
-#### More complex scripts
+#### Scripts más complejos
 
-There is much more we can do with shell scripting, including conditional logic, if statements, and much more. But for now, let's try to write some handy scripts to help us with daily tasks. Very commonly we are searching for a process using `ps aux | grep "Something"`. Instead of typing that whole thing, we could make a script that does that for us and passes in an argument. Let's try that out with a script called `process.sh`. It might look something like this.
+Hay mucho más que podemos hacer con shell scripting, incluyendo lógica condicional, sentencias if, y mucho más. Pero por ahora, intentemos escribir algunos scripts prácticos que nos ayuden con las tareas diarias. Muy comúnmente buscamos un proceso usando `ps aux | grep "Algo"`. En lugar de teclear todo eso, podríamos hacer un script que lo haga por nosotros y le pase un argumento. Intentémoslo con un script llamado `process.sh`. Podría ser algo como esto.
 
 ```
 ps aux | grep $1
 ```
 
-Now this is useful if we want to search for a process! If you would like to use the script frequently, you will want to make sure it is somewhere in your $PATH. You can also remove the `.sh` extension if you are doing this.
+¡Ahora esto es útil si queremos buscar un proceso! Si quieres usar el script frecuentemente, querrás asegurarte de que está en algún lugar de tu $PATH. También puedes eliminar la extensión `.sh` si estás haciendo esto.
 
 #### Vim
 
-Vim is a terminal based text editor. It can be quite intimidating at first, but if you spend the time to learn how to use it, you can become an extremely efficient developer. To open up something in `vi`, simply type `vi NAME_OF_FILE`. Once you are in vim you can exit **without** saving by pressing `escape + : + q`. If that is not working press `escape` + `:` + `q!`. If you want to quit and save a file you can either press `shift + Z + Z` or `escape + : + w + q!`.
+Vim es un editor de texto basado en terminal. Puede ser bastante intimidante al principio, pero si le dedicas tiempo a aprender a usarlo, puedes convertirte en un desarrollador extremadamente eficiente. Para abrir algo en `vi`, simplemente teclea `vi NOMBRE_DEL_ARCHIVO`. Una vez que estés en vim puedes salir **sin** guardar pulsando `escape + : + q`. Si no funciona pulse `escape` + `:` + `q!`. Si quieres salir y guardar un fichero puedes pulsar `shift + Z + Z` o `escape + : + w + q!`.
 
-When you first get into vim you will be in what is called `visual` mode. This means that your keyboard will be set for navigating and not for inserting characters; if you type letters and do not see anything being output, do not worry! To make insertions, press `i` to enter `insert` mode. Here you can make changes to files and type as you normally would. Just remember, if you want to quit out of a file you have to be in `visual` mode!
+La primera vez que entres en vim estarás en lo que se llama "modo visual". Esto significa que su teclado estará configurado para navegar y no para insertar caracteres; si teclea letras y no ve que sale nada, ¡no se preocupe! Para hacer inserciones, pulse `i` para entrar en el modo `insert`. Aquí puede hacer cambios en los archivos y escribir como lo haría normalmente. Sólo recuerda que si quieres salir de un fichero tienes que estar en modo `visual`.
 
-You can get more practice by using `vimtutor` - just type `vimtutor` into your terminal and you can get started. Alternatively, if you want a more visual tutorial you can check out [Vim Adventures](https://vim-adventures.com/).
+Puedes obtener más práctica utilizando `vimtutor` - simplemente escribe `vimtutor` en tu terminal y podrás empezar. Alternativamente, si quieres un tutorial más visual puedes echar un vistazo a [Vim Adventures](https://vim-adventures.com/).
 
 
 
-## { Advanced Terminal - 2 Exercises. }
+## { Terminal Avanzado - 2 Ejercicios. }
 
-Use the following text file to answer the questions
+Utilice el siguiente archivo de texto para responder a las preguntas
 
 ```
 Elie-Schoppik-sushi
-Tim-Garcia-gummybears
+Tim-Garcia-gominolas
 Janey-Keig-bagels
 Colt-Steele-tacos
 Matt-Lane-pizza
 ```
 
-1. Replace all of the `-` with `:` using `sed`
-2. Return a file with just the first name and last name separated by a space (you can do this with `cut` and `sed` or just `sed`)
+1. Sustituye todas las `-` por `:` utilizando `sed`.
+2. Devuelve un fichero con sólo el nombre y el apellido separados por un espacio (puedes hacerlo con `cut` y `sed` o sólo `sed`)
 
 ```
 1>>>>2
@@ -1675,11 +1676,11 @@ Matt-Lane-pizza
 4>>>>5
 ```
 
-1. Using `cut` print out just the numbers 2, 3, 4, 5. Use `xargs` to print them all on 1 line
-2. Using `xargs` in the `./Desktop` directory, find all of the files that include the text `Welcome`
-3. Write a shell script called `access_file.sh` which accepts one parameter and changes the permissions to `755`
-4. Write a shell script called `unaccessible_sh.sh` which accepts one parameter and changes the permissions to `300`
-5. Using `sed` write the command to replace all instances of the name "foo" with the string "bar" in a file called `baz.txt`
-6. Write the command to only print out all of the `pid`s using `awk`
-7. Type in the `df -h` command - it will show you much space you have on your hard drive. Using the `awk` command, print out **only** the first percentage capacity.
+1. Usando `cut` imprime sólo los números 2, 3, 4, 5. Usa `xargs` para imprimirlos todos en 1 línea
+2. Usando `xargs` en el directorio `./Desktop`, encuentra todos los ficheros que incluyen el texto `Welcome`.
+3. Escribe un script de shell llamado `access_file.sh` que acepte un parámetro y cambie los permisos a `755`
+4. Escribe un script de shell llamado `unaccessible_sh.sh` que acepte un parámetro y cambie los permisos a `300`
+5. Usando `sed` escribe el comando para reemplazar todas las instancias del nombre "foo" por la cadena "bar" en un fichero llamado `baz.txt`
+6. Escribe el comando para imprimir sólo todos los `pid`s usando `awk`
+7. Escribe el comando `df -h` - te mostrará cuánto espacio tienes en tu disco duro. Usando el comando `awk`, imprime **sólo** el primer porcentaje de capacidad.
 
